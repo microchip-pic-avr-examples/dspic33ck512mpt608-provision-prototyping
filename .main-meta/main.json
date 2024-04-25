@@ -5,20 +5,20 @@
       "metaDataVersion":"1.3.0",
       "name":"com.microchip.mplabx.project.dspic33ck512mpt608-provision-prototyping",
       "version":"x.x.x",
-      "displayName":"xxxxxxxxxxxxxxx",
+      "displayName":"dsPIC33CK512MPT608 Provision Prototyping",
       "projectName":"dspic33ck512mpt608-provision-prototyping",
-      "shortDescription":"xxxxxxxxxxxxxxx",
+      "shortDescription":"The code example uses the MPLAB® Code Configurator Melody Crypto Authentication Library, along with the Trust Platform Design Suite (TPDS). The MCC Melody library helps set up the device for provisioning. The actual provisioning is done in the TPDS.",
       "ide":{
          "name":"MPLABX",
          "semverRange":">=5.40.0"
       },
       "compiler":{
-         "name":"XC16",
-         "semverRange":"^1.50.0"
+         "name":"XC-DSC",
+         "semverRange":"^3.0.0"
       },
       "dfp":{
-         "name":"xxxxxxxxxxxxxxx",
-         "semverRange":">=x.x.x"
+         "name":"dsPIC33CK-MP_DFP",
+         "semverRange":">=1.13.366"
       },
 	  "configurator": {
          "name": "MCC",
@@ -30,13 +30,13 @@
          "content":{
             "metaDataVersion":"1.0.0",
             "category":"com.microchip.device",
-            "name":"xxxxxxxxxxxxxxx",
+            "name":"dsPIC33CK512MPT608",
             "versionRange":"*"
          }
       },
       "keywords":[
-         "GPIO",
-         "UART"
+         "Crypto Authentication Library",
+         "CryptoAuthentication"
       ]
    }
 }
