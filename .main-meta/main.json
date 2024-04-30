@@ -7,7 +7,7 @@
       "version":"1.0.0",
       "displayName":"dsPIC33CK512MPT608 Provision Prototyping",
       "projectName":"dspic33ck512mpt608-provision-prototyping",
-      "shortDescription":"The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure the Crypto Authentication Library to enable provisioning within Trust Platform Design Suite (TPDS). TPDS uses Kit Protocol on device to provision the prototypes.",
+      "shortDescription":"The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure the Crypto Authentication Library to prototype provision using the Trust Platform Design Suite (TPDS). TPDS uses Kit Protocol on device to provision the prototypes.",
       "ide":{
          "name":"MPLABX",
          "semverRange":">=5.40.0"
