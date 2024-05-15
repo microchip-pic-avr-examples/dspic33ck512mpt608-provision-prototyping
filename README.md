@@ -151,19 +151,3 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
     - U3TX: RD1
 
     ![Set that UART pins](images/select_UART_pins.JPG)
-
-#### CAL Settings
-- Device Supports
-  - Device: This is the secure element that will be used. 
-  - Custom Name: Allows the user to set a custom name for the secure element.
-  - Communication Peripheral: The communication method that the device will be using (ex: SPI, I2C)
-- Firmware
-  - Version: Version of the firmware used by the module.
-- Library Settings
-  - Wait for maximum command response time:
-  - Print debug statements in library:
-  - Use a constant host nonce for encrypted read:
-- Peripheral Selection
-  - Host Dependency: The exact PLIB that the secure element will use. This is based on the "Communication Peripheral" in the Device Supports section.
-- Secure Element Provision Prototyping Settings
-  - Enable Kit Protocol: Enables kit protocol for the project.
