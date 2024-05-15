@@ -44,7 +44,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
     - TA100-TCSM TPDS configurator (see "TPDS Setup")
     - TA-Lib-MCC
 
-3. For TA-Lib-MCC follow steps [here](https://onlinedocs.microchip.com/oxy/GUID-7F2639F3-1541-4BFC-A031-9A718BFFC502-en-US-18/GUID-7D69101E-EA71-47BE-B794-7F2CA6363B2C.html).
+3. For TA-Lib-MCC follow steps [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=TALIB_SETUP&version=latest&redirect=true).
 
 4. The "Trust Anchor Library" should now be visible in the MCC Melody Content Manager.
 
