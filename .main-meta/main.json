@@ -42,7 +42,9 @@
          "TA100",
          "Cryptography",
          "Security",
-         "dsPIC"
+         "dsPIC",
+         "Secure Subsystem",
+         "TPDS"
       ]
    }
 }
