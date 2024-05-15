@@ -62,7 +62,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 1. Install TPDS (https://www.microchip.com/en-us/products/security/trust-platform/tpds).
 
-2. Follow the instructions found [here](https://internal.onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true).
+2. Follow the instructions found [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true).
 
 **NOTE:** TPDS needs to be restarted before the changes are applied.
 
