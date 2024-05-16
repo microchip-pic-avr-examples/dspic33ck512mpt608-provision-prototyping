@@ -100,7 +100,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
     - Config Memory Lock: Unchecked
     - Setup Lock: Unchecked
 
-        <img src="./images/TA100_settings.jpg" height="500" alt="TPDS Configurators">
+    <img src="./images/TA100_settings.jpg" height="500" alt="TPDS Configurators">
 
 5. Click "Generate Provisioning Package"
 
