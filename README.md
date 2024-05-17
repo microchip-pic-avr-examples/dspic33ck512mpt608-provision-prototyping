@@ -18,13 +18,12 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 ## Software Used 
 - MPLAB® X IDE **6.20** or newer (https://www.microchip.com/MPLABXIDE)
-- MPLAB® XC-DSC Compiler **3.00** or a newer compiler (https://www.microchip.com/xc)
+- MPLAB® XC-DSC Compiler **3.00** or a newer compiler (https://www.microchip.com/xcdsc)
 - MPLAB® Code Configurator (MCC) Plugin **5.5.1** or newer (https://www.microchip.com/mcc)
 - MPLAB® Code Configurator (MCC) Core **5.7.1** or newer (https://www.microchip.com/mcc)
 - MPLAB® Code Configurator (MCC) Melody **2.7.1** or newer (https://www.microchip.com/melody)
 - Crypto Authentification Library **5.8.0** or newer (https://www.npmjs.com/package/@mchp-mcc/crypto-authentication-library)
-- Trust Anchor Library **1.2.0** or newer (https://www.microchip.com/mymicrochip/#)
-- Trust Platform Design Suite **2.3.9** or newer (https://www.microchip.com/en-us/products/security/trust-platform/tpds)
+- Trust Platform Design Suite **2.3.9** or newer (https://microchip.com/tpds)
 
 ## Hardware Used
 
@@ -34,7 +33,6 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 ## Prerequisites
 
-### TA100 Setup
 
 **NOTE:** This project requires a non-public version of TA100 support. 
 
@@ -43,10 +41,6 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 2. The two items that need to be requested are:
     - TA100-TCSM TPDS configurator (see "TPDS Setup")
     - TA-Lib-MCC
-
-3. For TA-Lib-MCC follow steps [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=TALIB_SETUP&version=latest&redirect=true).
-
-4. The "Trust Anchor Library" should now be visible in the MCC Melody Content Manager.
 
 ## Setup
 
@@ -65,6 +59,10 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 2. Follow the instructions found [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true).
 
 **NOTE:** TPDS needs to be restarted before the changes are applied.
+
+### TALib Setup 
+
+1. Install TA-Lib-MCC by following the steps [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=TALIB_SETUP&version=latest&redirect=true).
 
 ## Running the Demo
 1. Launch the MPLAB® X IDE and load the "dsPIC33CK512MPT608_provision_prototyping.X" project.
@@ -126,11 +124,11 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 2. Create a new project with the dsPIC33CK512MPT608 as the device. 
 3. Open MCC Melody.
 
-4. Add the Crypto Authentication Library.
+4. Add the Crypto Authentication Library (CAL).
 
     <img src="./images/add_cal.jpg" height="400" alt="Add CAL">
 
-5. Open the Easy View to see the CAL settings. See the **CAL Settings** section below fo an explanation on each setting.
+5. Open the Easy View to see the CAL settings. 
 
 6. In the "Device" dropdown, select "Internal Secure Subsystem."
 
@@ -151,3 +149,19 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
     - U3TX: RD1
 
     ![Set that UART pins](images/select_UART_pins.JPG)
+
+10. Right-click on the "Generate" button and select the "Force Update on All" option.
+
+    ![Select Force Update](images/force_update.JPG)
+
+11. Click the "Generate" button. The CAL files should generate successfully.
+
+    ![Generate Files Success](images/generation_success.JPG)
+
+12. When the merge window pops up, select the "Replace All" option to accept all changes.  
+
+    ![Replace All](images/force_replace_all.JPG)
+
+13. Make and program the device.
+
+14. Follow the steps listed under "TPDS" to provision prototypes.
