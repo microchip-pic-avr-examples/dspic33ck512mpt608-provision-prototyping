@@ -23,6 +23,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 - MPLAB® Code Configurator (MCC) Core **5.7.1** or newer (https://www.microchip.com/mcc)
 - MPLAB® Code Configurator (MCC) Melody **2.7.1** or newer (https://www.microchip.com/melody)
 - Crypto Authentification Library **5.8.0** or newer (https://www.npmjs.com/package/@mchp-mcc/crypto-authentication-library)
+- Trust Anchor Library **1.2.0** or newer
 - Trust Platform Design Suite **2.3.9** or newer (https://microchip.com/tpds)
 
 ## Hardware Used
@@ -54,7 +55,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
         
 ### TPDS Setup
 
-1. Install TPDS (https://www.microchip.com/en-us/products/security/trust-platform/tpds).
+1. Install TPDS (https://microchip.com/tpds).
 
 2. Follow the instructions found [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true).
 
@@ -150,18 +151,10 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
     ![Set that UART pins](images/select_UART_pins.JPG)
 
-10. Right-click on the "Generate" button and select the "Force Update on All" option.
-
-    ![Select Force Update](images/force_update.JPG)
-
-11. Click the "Generate" button. The CAL files should generate successfully.
+10. Click the "Generate" button. The CAL files should generate successfully.
 
     ![Generate Files Success](images/generation_success.JPG)
 
-12. When the merge window pops up, select the "Replace All" option to accept all changes.  
+11. Make and program the device.
 
-    ![Replace All](images/force_replace_all.JPG)
-
-13. Make and program the device.
-
-14. Follow the steps listed under "TPDS" to provision prototypes.
+12. Follow the steps listed under "Running the Demo -> TPDS" to provision prototypes.
