@@ -51,7 +51,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 2. Connect the board to the computer using a USB cable, connecting to the Serial port.
 
-    <img src="./images/hardware_setup.jpg" height="400" alt="Hardware Setup">
+    <img src="./images/hardware_setup.jpg" height="400" alt="Hardware Setup"/>
         
 ### TPDS Setup
 
@@ -90,7 +90,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 2. Select the "Configurators" tab at the top.
 
-    <img src="./images/tpds_configurators_tab.jpg" height="400" alt="TPDS Configurators">
+    <img src="./images/tpds_configurators_tab.jpg" height="400" alt="TPDS Configurators"/>
 
 3. Select the TA100 Configurator under the TrustCUSTOM Section.
 4. Update the Device Configuration Options:
@@ -99,7 +99,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
     - Config Memory Lock: Unchecked
     - Setup Lock: Unchecked
 
-    <img src="./images/TA100_settings.jpg" height="500" alt="TPDS Configurators">
+    <img src="./images/TA100_settings.jpg" height="500" alt="TPDS Configurators"/>
 
 5. Click "Generate Provisioning Package"
 
@@ -127,7 +127,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 4. Add the Crypto Authentication Library (CAL).
 
-    <img src="./images/add_cal.jpg" height="400" alt="Add CAL">
+    <img src="./images/add_cal.jpg" height="400" alt="Add CAL"/>
 
 5. Open the Easy View to see the CAL settings. 
 
