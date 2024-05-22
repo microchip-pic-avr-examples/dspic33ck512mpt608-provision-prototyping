@@ -4,6 +4,4 @@
 - Initial Release
 
 ### Features Added\Updated
-- The code example showcases the use of the Crypto Authentication Library to enable prototype provisioning.
-- Includes the use of the Trust Platform Design Suite (TPDS). 
-- Instructions on how to request and setup secure documents used for the trust anchor library.
+- The code example showcases how to provision prototypes for the secure element in dsPIC33CK512MPT608 using MCC Melody CryptoAuthentication Library and TPDS.
