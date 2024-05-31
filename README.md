@@ -12,8 +12,8 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 ## Related Documentation
 
-- [MCC Melody CryptoAuthenticaton Library (CAL) Release Notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=MCC.MELODY.CAL.RELEASENOTES&version=latest&redirect=true)
-- [CryptoAuthentication Library (CAL) GitHub](https://www.github.com/MicrochipTech/cryptoauthlib)
+- [MCC Melody CryptoAuthenticaton Library Release Notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=MCC.MELODY.CAL.RELEASENOTES&version=latest&redirect=true)
+- [CryptoAuthentication Library GitHub](https://www.github.com/MicrochipTech/cryptoauthlib)
 - [Secure Provision Prototyping Documentation](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true)
 
 ## Software Used 
@@ -29,7 +29,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 ## Hardware Used
 
 - Explorer 16/32 Board (https://www.microchip.com/dm240001-2)
-- dsPIC33CK512MPT608 PIM (https://www.microchip.com/en-us/development-tool/ev10h29a)
+- dsPIC33CK512MPT608 PIM (https://www.microchip.com/ev10h29a)
 - MPLAB® ICD 4 In-Circuit Debugger (https://www.microchip.com/dv164045) or MPLAB® PICkit™ 5 In-Circuit Debugger (https://www.microchip.com/PG164150) or MPLAB® PICkit™ 4 In-Circuit Debugger (https://www.microchip.com/PG164140)
 
 ## Prerequisites
@@ -38,7 +38,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 1. Follow [these steps](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/SupportingCollateral/Secure-Documents-MyMCHP-00004722.pdf) to request secure documents on myMicrochip.
 
-2. The two items that need to be requested are:
+2. The items that need to be requested are:
     - TA100-TCSM TPDS configurator (see "TPDS Setup")
     - TA-Lib-MCC
     - TA100 Documentation
