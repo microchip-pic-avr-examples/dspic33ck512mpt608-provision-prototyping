@@ -8,12 +8,12 @@
 
 ## Summary
 
-The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure the CryptoAuthentication Library to enable prototype provisioning within Trust Platform Design Suite (TPDS).
+The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure the CryptoAuthentication Library (CAL) to enable prototype provisioning within Trust Platform Design Suite (TPDS).
 
 ## Related Documentation
 
-- [MCC Melody CryptoAuthenticaton Library Release Notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=MCC.MELODY.CAL.RELEASENOTES&version=latest&redirect=true)
-- [CryptoAuthentication Library GitHub](https://github.com/MicrochipTech/cryptoauthlib)
+- [MCC Melody CryptoAuthenticaton Library (CAL) Release Notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=MCC.MELODY.CAL.RELEASENOTES&version=latest&redirect=true)
+- [CryptoAuthentication Library (CAL) GitHub](https://www.github.com/MicrochipTech/cryptoauthlib)
 - [Secure Provision Prototyping Documentation](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true)
 
 ## Software Used 
@@ -24,16 +24,15 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 - MPLAB® Code Configurator (MCC) Melody **2.7.1** or newer (https://www.microchip.com/melody)
 - Crypto Authentification Library **5.8.0** or newer (https://www.npmjs.com/package/@mchp-mcc/crypto-authentication-library)
 - Trust Anchor Library **1.2.0** or newer
-- Trust Platform Design Suite **2.3.9** or newer (https://microchip.com/tpds)
+- Trust Platform Design Suite **2.3.9** or newer (https://www.microchip.com/tpds)
 
 ## Hardware Used
 
 - Explorer 16/32 Board (https://www.microchip.com/dm240001-2)
-- dsPIC33CK512MPT608 PIM (https://www.microchip.com/dsPIC33CK512MPT608)
+- dsPIC33CK512MPT608 PIM (https://www.microchip.com/en-us/development-tool/ev10h29a)
 - MPLAB® ICD 4 In-Circuit Debugger (https://www.microchip.com/dv164045) or MPLAB® PICkit™ 5 In-Circuit Debugger (https://www.microchip.com/PG164150) or MPLAB® PICkit™ 4 In-Circuit Debugger (https://www.microchip.com/PG164140)
 
 ## Prerequisites
-
 
 **NOTE:** This project requires a non-public version of TA100 support. 
 
@@ -42,6 +41,9 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 2. The two items that need to be requested are:
     - TA100-TCSM TPDS configurator (see "TPDS Setup")
     - TA-Lib-MCC
+    - TA100 Documentation
+  
+    **NOTE:** The TA100 Documentation is not required, but it is a great resource on the TA100 secure element. It is highly recommended to request access to this document when working with the TA100.
 
 ## Setup
 
@@ -55,9 +57,9 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
         
 ### TPDS Setup
 
-1. Install TPDS (https://microchip.com/tpds).
+1. Install TPDS (https://www.microchip.com/tpds).
 
-2. Follow the instructions found [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true).
+2. An extension is needed to enable kit protocol over UART. Kit protocol allows TPDS to communicate with the hardware, and subsequently, the secure elements. Follow the instructions found [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
 
 **NOTE:** TPDS needs to be restarted before the changes are applied.
 
