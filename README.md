@@ -39,11 +39,11 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 1. Follow [these steps](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/SupportingCollateral/Secure-Documents-MyMCHP-00004722.pdf) to request secure documents on myMicrochip.
 
 2. The items that need to be requested are:
-    - TA100-TCSM TPDS configurator (see "TPDS Setup")
+    - TA100-TCSM TPDS configurator (see ["TPDS Setup"](#tpds-setup))
     - TA-Lib-MCC
     - TA100 Documentation
   
-    **NOTE:** The TA100 Documentation is not required, but it is a great resource on the TA100 secure element. It is highly recommended to request access to this document when working with the TA100.
+> **NOTE:** The TA100 Documentation is not required, but it is a great resource on the TA100 secure element. It is highly recommended to request access to this document when working with the TA100.
 
 ## Setup
 
