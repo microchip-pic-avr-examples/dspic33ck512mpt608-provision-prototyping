@@ -10,6 +10,8 @@
 
 The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure the CryptoAuthentication Library (CAL) to enable prototype provisioning within Trust Platform Design Suite (TPDS).
 
+The dsPIC33CK512MPT608 device, also known as Octans+, is a system in package. This means that the dsPIC device and a Trust Anchor [TA100](https://www.microchip.com/ta100) are in the same package. The two are connected internally over a SPI bus.
+
 ## Related Documentation
 
 - [MCC Melody CryptoAuthenticaton Library Release Notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=MCC.MELODY.CAL.RELEASENOTES&version=latest&redirect=true)
@@ -34,6 +36,8 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 ## Prerequisites
 
+The Secure Document Extranet (SDE) is a platform that allows users to access secure documents. It is available through myMicrochip. All documents are under an active Non-Disclosure Agreement. In order to get setup on the SDE, follow the directions found [here](https://www.microchip.com/en-us/support/sde-user-guide).
+
 > **NOTE:** This project requires a non-public version of TA100 support. 
 
 1. Follow [these steps](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/SupportingCollateral/Secure-Documents-MyMCHP-00004722.pdf) to request secure documents on myMicrochip.
@@ -57,9 +61,11 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
         
 ### TPDS Setup
 
+The Trust Platform Design Suite (TPDS) is a tool used to configure and generate provisioning information for secure elements and trust anchor devices. TPDS does not have the security to provide or create secure things like keys, so the provisioning package that TPDS creates must be exchanged with Microchip support for an actual secure package. However, as this can take time to do, TPDS can also be used to prototype provision for quick provisioning for testing purposes. 
+
 1. Install TPDS (https://www.microchip.com/tpds).
 
-2. An extension is needed to enable kit protocol over UART. Kit protocol allows TPDS to communicate with the hardware, and subsequently, the secure elements. Follow the instructions found [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
+2. An extension is needed to enable kit protocol over UART. Kit protocol allows TPDS to communicate with the hardware, and subsequently, the secure elements. Kit protocol is used for the provisioning process. Follow the instructions found [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
 
 > **NOTE:** TPDS needs to be restarted before the changes are applied.
 
