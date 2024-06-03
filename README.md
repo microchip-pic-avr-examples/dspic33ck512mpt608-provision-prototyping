@@ -34,7 +34,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 ## Prerequisites
 
-**NOTE:** This project requires a non-public version of TA100 support. 
+> **NOTE:** This project requires a non-public version of TA100 support. 
 
 1. Follow [these steps](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/SupportingCollateral/Secure-Documents-MyMCHP-00004722.pdf) to request secure documents on myMicrochip.
 
@@ -61,7 +61,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 2. An extension is needed to enable kit protocol over UART. Kit protocol allows TPDS to communicate with the hardware, and subsequently, the secure elements. Follow the instructions found [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
 
-**NOTE:** TPDS needs to be restarted before the changes are applied.
+> **NOTE:** TPDS needs to be restarted before the changes are applied.
 
 ### TALib Setup 
 
