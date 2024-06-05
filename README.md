@@ -10,7 +10,7 @@
 
 The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure the CryptoAuthentication Library (CAL) to enable prototype provisioning within Trust Platform Design Suite (TPDS).
 
-The [dsPIC33CK512MPT608](https://www.microchip.com/dsPIC33CK512MPT608) device is a System in Package(SiP) containing a Hardware Security Module [TA100](https://www.microchip.com/ta100) internally connected to the microcontroller over a SPI bus.
+The [dsPIC33CK512MPT608](https://www.microchip.com/dsPIC33CK512MPT608) device is a System in Package (SiP) containing a Hardware Security Module [TA100](https://www.microchip.com/ta100) internally connected to the microcontroller over a SPI bus.
 
 ## Related Documentation
 
@@ -61,11 +61,11 @@ The Secure Document Extranet (SDE) is a platform available through the [myMicroc
         
 ### TPDS Setup
 
-The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements and trust anchor devices through its secure sub-system configurators. TPDS can be used to prototype provision for quick provisioning for testing purposes. Then, once the user is ready to move to production, they can use TPDS to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package. 
+The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements and trust anchor devices through its secure sub-system configurators. TPDS can be used to prototype provision for quick provisioning for testing purposes. Once users are ready to move to production, TPDS can be used to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package.
 
 1. Install TPDS (https://www.microchip.com/tpds).
 
-2. An extension is needed to enable kit protocol over UART. Kit protocol allows TPDS to communicate with the hardware, and subsequently, the secure elements. Kit protocol is used to provision the Trust Anchor element. Follow the instructions starting at "After installation complete the following steps" found in the "Trust Platform Design Suite Installation" section [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
+2. In order to provision the Trust Anchor element, an extension is required to enable Kit protocol over UART. This allows TPDS to communicate with the hardware and the secure elements. Follow the instructions starting at "After installation complete the following steps" found in the "Trust Platform Design Suite Installation" section [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
 
 > **NOTE:** TPDS needs to be restarted before the changes are applied.
 
@@ -149,7 +149,7 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
     ![Select a SPI peripheral](images/select_peripheral.JPG)
 
-8. Toggle the "Enable Kit Protocol" option so that kit protocol is selected.
+8. Toggle the "Enable Kit Protocol" option so that Kit protocol is selected.
 
     ![Enable Kit Protocol](images/enable_kit_protocol.JPG)
 
