@@ -10,7 +10,7 @@
 
 The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure the CryptoAuthentication Library (CAL) to enable prototype provisioning within Trust Platform Design Suite (TPDS).
 
-The dsPIC33CK512MPT608 device, also known as Octans+, is a system in package. This means that the dsPIC device and a Trust Anchor [TA100](https://www.microchip.com/ta100) are in the same package internally connected over a SPI bus.
+The [dsPIC33CK512MPT608](https://www.microchip.com/dsPIC33CK512MPT608) device is a System in Package(SiP) containing a Hardware Security Module [TA100](https://www.microchip.com/ta100) internally connected to the microcontroller over a SPI bus.
 
 ## Related Documentation
 
@@ -36,11 +36,11 @@ The dsPIC33CK512MPT608 device, also known as Octans+, is a system in package. Th
 
 ## Prerequisites
 
-The Secure Document Extranent (SDE) is a platform available through myMicrochip that allows users to access secure documents under an active Non-Disclosure Agreement. Follow the directions found [here](https://www.microchip.com/en-us/support/sde-user-guide) to get access to the SDE.
+The Secure Document Extranet (SDE) is a platform available through the [myMicrochip](https://www.microchip.com/myMicrochip/#/) portal that allows users to access secure documents under an active Non-Disclosure Agreement. Follow the directions found in the [SDE user guide](https://www.microchip.com/en-us/support/sde-user-guide) to get access to the SDE.
 
 > **NOTE:** This project requires a non-public version of TA100 support. 
 
-1. Follow [these steps](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/SupportingCollateral/Secure-Documents-MyMCHP-00004722.pdf) to request secure documents on myMicrochip.
+1. Follow the steps found in the "Request Access to Information About Specific Products" section [here](https://www.microchip.com/en-us/support/sde-user-guide) to request secure documents on myMicrochip.
 
 2. The items that need to be requested are:
     - TA100-TCSM TPDS configurator (see ["TPDS Setup"](#tpds-setup))
@@ -61,11 +61,11 @@ The Secure Document Extranent (SDE) is a platform available through myMicrochip 
         
 ### TPDS Setup
 
-The Trust Platform Design Suite is a tool used to configure and generate provisioning information for secure elements and trust anchor devices. TPDS does not have the security to provide or create secure things like keys, so the provisioning package that TPDS creates must be exchanged with Microchip support for an actual secure package. However, as this can take time to do, TPDS can also be used to prototype provision for quick provisioning for testing purposes. 
+The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements and trust anchor devices through its secure sub-system configurators. TPDS can be used to prototype provision for quick provisioning for testing purposes. Then, once the user is ready to move to production, they can use TPDS to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package. 
 
 1. Install TPDS (https://www.microchip.com/tpds).
 
-2. An extension is needed to enable kit protocol over UART. Kit protocol allows TPDS to communicate with the hardware, and subsequently, the secure elements. Kit protocol is used for the provisioning process. Follow the instructions found [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
+2. An extension is needed to enable kit protocol over UART. Kit protocol allows TPDS to communicate with the hardware, and subsequently, the secure elements. Kit protocol is used to provision the Trust Anchor element. Follow the instructions starting at "After installation complete the following steps" found in the "Trust Platform Design Suite Installation" section [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
 
 > **NOTE:** TPDS needs to be restarted before the changes are applied.
 
