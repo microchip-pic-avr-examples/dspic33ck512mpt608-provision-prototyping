@@ -61,11 +61,11 @@ The Secure Document Extranet (SDE) is a platform available through the [myMicroc
         
 ### TPDS Setup
 
-The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements like trust anchor devices through its secure sub-system configurators. TPDS can be used to prototype provision for quick provisioning for testing purposes. Once users are ready to move to production, TPDS can be used to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package.
+The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements like trust anchor secure elements through its secure sub-system configurators. TPDS can be used to prototype provision for quick provisioning for testing purposes. Once users are ready to move to production, TPDS can be used to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package.
 
 1. Install TPDS (https://www.microchip.com/tpds).
 
-2. In order to provision the Trust Anchor element, an extension is required to enable Kit protocol over UART. This allows TPDS to communicate with the hardware and the secure elements. Follow the instructions starting at "After installation complete the following steps" found in the "Trust Platform Design Suite Installation" section of [Section 4 of the CAL release notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
+2. In order to provision the Trust Anchor element, an extension is required to enable Kit Protocol over UART. This allows TPDS to communicate with the hardware and the secure elements. Follow the instructions found in the "Trust Platform Design Suite Installation" section of [Section 4 of the CAL release notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
 
 > **NOTE:** TPDS needs to be restarted before the changes are applied.
 
@@ -149,7 +149,7 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
     ![Select a SPI peripheral](images/select_peripheral.JPG)
 
-8. Toggle the "Enable Kit Protocol" option so that Kit protocol is selected.
+8. Toggle the "Enable Kit Protocol" option so that Kit Protocol is selected.
 
     ![Enable Kit Protocol](images/enable_kit_protocol.JPG)
 
