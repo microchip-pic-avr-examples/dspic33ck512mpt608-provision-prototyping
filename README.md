@@ -36,11 +36,11 @@ The [dsPIC33CK512MPT608](https://www.microchip.com/dsPIC33CK512MPT608) device is
 
 ## Prerequisites
 
-The Secure Document Extranet (SDE) is a platform available through the [myMicrochip](https://www.microchip.com/myMicrochip/#/) portal that allows users to access secure documents under an active Non-Disclosure Agreement. Follow the directions found in the [SDE user guide](https://www.microchip.com/en-us/support/sde-user-guide) to get access to the SDE.
+The Secure Document Extranet (SDE) is a platform available through the [myMicrochip](https://www.microchip.com/myMicrochip/#/) portal that allows users to access secure documents under an active Non-Disclosure Agreement. Follow the directions found in the [SDE User Guide](https://www.microchip.com/en-us/support/sde-user-guide) to get access to the SDE.
 
 > **NOTE:** This project requires a non-public version of TA100 support. 
 
-1. Follow the steps found in the "Request Access to Information About Specific Products" section [here](https://www.microchip.com/en-us/support/sde-user-guide) to request secure documents on myMicrochip.
+1. Follow the steps found in the "Request Access to Information About Specific Products" section of the [SDE User Guide](https://www.microchip.com/en-us/support/sde-user-guide) to request secure documents on myMicrochip.
 
 2. The items that need to be requested are:
     - TA100-TCSM TPDS configurator (see ["TPDS Setup"](#tpds-setup))
@@ -61,17 +61,17 @@ The Secure Document Extranet (SDE) is a platform available through the [myMicroc
         
 ### TPDS Setup
 
-The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements and trust anchor devices through its secure sub-system configurators. TPDS can be used to prototype provision for quick provisioning for testing purposes. Once users are ready to move to production, TPDS can be used to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package.
+The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements like trust anchor devices through its secure sub-system configurators. TPDS can be used to prototype provision for quick provisioning for testing purposes. Once users are ready to move to production, TPDS can be used to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package.
 
 1. Install TPDS (https://www.microchip.com/tpds).
 
-2. In order to provision the Trust Anchor element, an extension is required to enable Kit protocol over UART. This allows TPDS to communicate with the hardware and the secure elements. Follow the instructions starting at "After installation complete the following steps" found in the "Trust Platform Design Suite Installation" section [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
+2. In order to provision the Trust Anchor element, an extension is required to enable Kit protocol over UART. This allows TPDS to communicate with the hardware and the secure elements. Follow the instructions starting at "After installation complete the following steps" found in the "Trust Platform Design Suite Installation" section of [Section 4 of the CAL release notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
 
 > **NOTE:** TPDS needs to be restarted before the changes are applied.
 
 ### TALib Setup 
 
-1. Install TA-Lib-MCC by following the steps [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=TALIB_SETUP&version=latest&redirect=true).
+1. Install TA-Lib-MCC by following the steps [Section 6 of the CAL release notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=TALIB_SETUP&version=latest&redirect=true).
 
 ## Running the Demo
 1. Launch the MPLAB® X IDE and load the "dsPIC33CK512MPT608_provision_prototyping.X" project.
