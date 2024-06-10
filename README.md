@@ -61,17 +61,17 @@ The Secure Document Extranet (SDE) is a platform available through the [myMicroc
         
 ### TPDS Setup
 
-The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements like trust anchor secure elements through its secure sub-system configurators. TPDS can be used to prototype provision for quick provisioning for testing purposes. Once users are ready to move to production, TPDS can be used to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package.
+The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements like Trust Anchor secure elements through its secure sub-system configurators. TPDS can be used to prototype provision for quick provisioning for testing purposes. Once users are ready to move to production, TPDS can be used to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package.
 
 1. Install TPDS (https://www.microchip.com/tpds).
 
-2. In order to provision the Trust Anchor element, an extension is required to enable Kit Protocol over UART. This allows TPDS to communicate with the hardware and the secure elements. Follow the instructions found in the "Trust Platform Design Suite Installation" section of [Section 4 of the CAL release notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
+2. In order to provision the Trust Anchor element, an extension is required to enable Kit Protocol over UART. This allows TPDS to communicate with the hardware and the secure elements. Follow the instructions found in the "Trust Platform Design Suite Installation" section of the [CAL release notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
 
 > **NOTE:** TPDS needs to be restarted before the changes are applied.
 
 ### TALib Setup 
 
-1. Install TA-Lib-MCC by following the steps [Section 6 of the CAL release notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=TALIB_SETUP&version=latest&redirect=true).
+1. Install TA-Lib-MCC by following the steps in the Installing MPLAB® Code Configurator Melody Trust Anchor Library section of the [CAL Release Notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=TALIB_SETUP&version=latest&redirect=true).
 
 ## Running the Demo
 1. Launch the MPLAB® X IDE and load the "dsPIC33CK512MPT608_provision_prototyping.X" project.
