@@ -60,7 +60,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/code_example_diagram_dark.svg">
 	<source media="(prefers-color-scheme: light)" srcset="images/code_example_diagram_light.svg">
-    <img alt="Octans+ Code Example Diagram" src="images/code_example_diagram_light.svg">
+    <img alt="Code Example Diagram" src="images/code_example_diagram_light.svg">
 </picture>
 
 1. Install TPDS (https://www.microchip.com/tpds).
