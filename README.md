@@ -36,7 +36,7 @@ The [dsPIC33CK512MPT608](https://www.microchip.com/dsPIC33CK512MPT608) device is
 
 ## Prerequisites
 
-The Secure Document Extranet (SDE) is a platform available through the [myMicrochip](https://www.microchip.com/myMicrochip/#/) portal that allows users to access secure documents under an active Non-Disclosure Agreement. Follow the directions found in the [SDE User Guide](https://www.microchip.com/en-us/support/sde-user-guide) to get access to the SDE.
+The Secure Document Extranet (SDE) is a platform available through the [myMicrochip](https://www.microchip.com/myMicrochip/#/) portal that allows users to access secure documents. Follow the directions found in the [SDE User Guide](https://www.microchip.com/en-us/support/sde-user-guide) to get access to the SDE.
 
 > **NOTE:** This project requires a non-public version of TA100 support. 
 
@@ -61,7 +61,7 @@ The Secure Document Extranet (SDE) is a platform available through the [myMicroc
         
 ### TPDS Setup
 
-The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements like Trust Anchor secure elements through its secure sub-system configurators. TPDS can be used to prototype provision for quick provisioning for testing purposes. Once users are ready to move to production, TPDS can be used to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package.
+The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements like Trust Anchor through its secure sub-system configurators. TPDS can be used to prototype provision for quick provisioning for testing purposes. Once users are ready to move to production, TPDS can be used to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package.
 
 1. Install TPDS (https://www.microchip.com/tpds).
 
