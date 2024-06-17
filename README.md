@@ -57,6 +57,12 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
         
 ### TPDS Setup
 
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="images/code_example_diagram_dark.svg">
+	<source media="(prefers-color-scheme: light)" srcset="images/code_example_diagram_light.svg">
+    <img alt="Code Example Diagram" src="images/code_example_diagram_light.svg">
+</picture>
+
 1. Install TPDS (https://www.microchip.com/tpds).
 
 2. An extension is needed to enable kit protocol over UART. Kit protocol allows TPDS to communicate with the hardware, and subsequently, the secure elements. Follow the instructions found [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
