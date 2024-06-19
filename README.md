@@ -44,8 +44,11 @@ The Secure Document Extranet (SDE) is a platform available through the [myMicroc
 
 2. The items that need to be requested are:
     - TA100-TCSM TPDS configurator (see ["TPDS Setup"](#tpds-setup))
+      - This configurator allows for TPDS to communicate and configure a TA100 secure element.
     - TA-Lib-MCC
+      - Allows for the inclusion of Trust Anchor configuration in the CryptoAuthentication Library MCC Melody module.
     - TA100 Documentation
+      - Provides information about the TA100 secure element.
   
 > **NOTE:** The TA100 Documentation is not required, but it is a great resource on the TA100 secure element. It is highly recommended to request access to this document when working with the TA100.
 
@@ -61,7 +64,7 @@ The Secure Document Extranet (SDE) is a platform available through the [myMicroc
         
 ### TPDS Setup
 
-The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements like Trust Anchor through its secure sub-system configurators. TPDS can be used to prototype provision for quick provisioning for testing purposes. Once users are ready to move to production, TPDS can be used to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package.
+The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements like a Trust Anchor device through its configurators. TPDS can be used to prototype provision to quickly provision a secure element for testing purposes. Once users are ready to move to production, TPDS can be used to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package.
 
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/code_example_diagram_dark.svg">
