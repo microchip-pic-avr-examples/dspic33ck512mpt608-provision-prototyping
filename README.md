@@ -8,7 +8,7 @@
 
 ## Summary
 
-The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure the CryptoAuthentication Library (CAL) to enable prototype provisioning within Trust Platform Design Suite (TPDS).
+The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure the CryptoAuthentication Library (CAL) in MCC Melody to enable prototype provisioning within Trust Platform Design Suite (TPDS).
 
 The [dsPIC33CK512MPT608](https://www.microchip.com/dsPIC33CK512MPT608) device is a System in Package (SiP) containing a Hardware Security Module [TA100](https://www.microchip.com/ta100) internally connected to the microcontroller over a SPI bus.
 
@@ -16,7 +16,7 @@ The [dsPIC33CK512MPT608](https://www.microchip.com/dsPIC33CK512MPT608) device is
 
 - [MCC Melody CryptoAuthenticaton Library Release Notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=MCC.MELODY.CAL.RELEASENOTES&version=latest&redirect=true)
 - [CryptoAuthentication Library GitHub](https://www.github.com/MicrochipTech/cryptoauthlib)
-- [Secure Provision Prototyping Documentation](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true)
+- [Secure Element Provision Prototyping Documentation](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true)
 
 ## Software Used 
 - MPLAB® X IDE **6.20** or newer (https://www.microchip.com/MPLABXIDE)
@@ -46,7 +46,7 @@ The Secure Document Extranet (SDE) is a platform available through the [myMicroc
     - TA100-TCSM TPDS configurator (see ["TPDS Setup"](#tpds-setup))
       - This configurator allows for TPDS to communicate and configure a TA100 secure element.
     - TA-Lib-MCC
-      - Allows for the inclusion of Trust Anchor configuration in the CryptoAuthentication Library MCC Melody module.
+      - Allows for the inclusion of Trust Anchor configuration in the MCC Melody CryptoAuthentication Library module.
     - TA100 Documentation
       - Provides information about the TA100 secure element.
   
@@ -87,7 +87,7 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
 2. Launch MCC Melody.
 
-3. Right-click on the "Generate" button and select the "Force Update on All" option.
+3. Right-click on the "Generate" button and select the "Force Update on All" option. This will generate the TALib files that were not allowed to be included in the project on GitHub.
 
     ![Select Force Update](images/force_update.JPG)
 
