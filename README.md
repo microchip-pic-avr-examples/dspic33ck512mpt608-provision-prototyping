@@ -42,7 +42,7 @@ The Secure Document Extranet (SDE) is a platform available through the [myMicroc
 
 1. Follow the steps found in the "Request Access to Information About Specific Products" section of the [SDE User Guide](https://www.microchip.com/en-us/support/sde-user-guide) to request secure documents on myMicrochip.
 
-2. The items that need to be requested are:
+2. The items that are needed are covered under an NDA and need to be requested. The following need to be requested: 
     - TA100-TCSM TPDS configurator (see ["TPDS Setup"](#tpds-setup))
       - This configurator allows for TPDS to communicate and configure a TA100 secure element.
     - TA-Lib-MCC
@@ -87,7 +87,7 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
 2. Launch MCC Melody.
 
-3. Right-click on the "Generate" button and select the "Force Update on All" option. This will generate the TALib files that were not allowed to be included in the project on GitHub.
+3. Right-click on the "Generate" button and select the "Force Update on All" option. This will generate files for the MCC Melody Trust Anchor Library that we added to the project in the TALib Setup step.
 
     ![Select Force Update](images/force_update.JPG)
 
