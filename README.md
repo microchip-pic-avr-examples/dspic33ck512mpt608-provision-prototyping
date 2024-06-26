@@ -8,13 +8,15 @@
 
 ## Summary
 
-The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure the CryptoAuthentication Library (CAL) to enable prototype provisioning within Trust Platform Design Suite (TPDS).
+The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure the CryptoAuthentication Library (CAL) in MCC Melody to enable prototype provisioning within Trust Platform Design Suite (TPDS).
+
+The [dsPIC33CK512MPT608](https://www.microchip.com/dsPIC33CK512MPT608) device is a System in Package (SiP) containing a Hardware Security Module [TA100](https://www.microchip.com/ta100) internally connected to the microcontroller over a SPI bus.
 
 ## Related Documentation
 
 - [MCC Melody CryptoAuthenticaton Library Release Notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=MCC.MELODY.CAL.RELEASENOTES&version=latest&redirect=true)
 - [CryptoAuthentication Library GitHub](https://www.github.com/MicrochipTech/cryptoauthlib)
-- [Secure Provision Prototyping Documentation](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true)
+- [Secure Element Provision Prototyping Documentation](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true)
 
 ## Software Used 
 - MPLAB® X IDE **6.20** or newer (https://www.microchip.com/MPLABXIDE)
@@ -34,14 +36,19 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 ## Prerequisites
 
+The Secure Document Extranet (SDE) is a platform available through the [myMicrochip](https://www.microchip.com/myMicrochip/#/) portal that allows users to access secure documents. Follow the directions found in the [SDE User Guide](https://www.microchip.com/en-us/support/sde-user-guide) to get access to the SDE.
+
 > **NOTE:** This project requires a non-public version of TA100 support. 
 
-1. Follow [these steps](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/SupportingCollateral/Secure-Documents-MyMCHP-00004722.pdf) to request secure documents on myMicrochip.
+1. Follow the steps found in the "Request Access to Information About Specific Products" section of the [SDE User Guide](https://www.microchip.com/en-us/support/sde-user-guide) to request secure documents on myMicrochip.
 
-2. The items that need to be requested are:
+2. The items that are needed are covered under an NDA and need to be requested. The following need to be requested: 
     - TA100-TCSM TPDS configurator (see ["TPDS Setup"](#tpds-setup))
+      - This configurator allows for TPDS to communicate and configure a TA100 secure element.
     - TA-Lib-MCC
+      - Allows for the inclusion of Trust Anchor configuration in the MCC Melody CryptoAuthentication Library module.
     - TA100 Documentation
+      - Provides information about the TA100 secure element.
   
 > **NOTE:** The TA100 Documentation is not required, but it is a great resource on the TA100 secure element. It is highly recommended to request access to this document when working with the TA100.
 
@@ -57,6 +64,8 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
         
 ### TPDS Setup
 
+The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements like a Trust Anchor device through its configurators. TPDS can be used to prototype provision to quickly provision a secure element for testing purposes. Once users are ready to move to production, TPDS can be used to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package.
+
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/code_example_diagram_dark.svg">
 	<source media="(prefers-color-scheme: light)" srcset="images/code_example_diagram_light.svg">
@@ -65,20 +74,20 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 1. Install TPDS (https://www.microchip.com/tpds).
 
-2. An extension is needed to enable kit protocol over UART. Kit protocol allows TPDS to communicate with the hardware, and subsequently, the secure elements. Follow the instructions found [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
+2. In order to provision the Trust Anchor element, an extension is required to enable Kit Protocol over UART. This allows TPDS to communicate with the hardware and the secure elements. Follow the instructions found in the "Trust Platform Design Suite Installation" section of the [CAL release notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
 
 > **NOTE:** TPDS needs to be restarted before the changes are applied.
 
 ### TALib Setup 
 
-1. Install TA-Lib-MCC by following the steps [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=TALIB_SETUP&version=latest&redirect=true).
+1. Install TA-Lib-MCC by following the steps in the Installing MPLAB® Code Configurator Melody Trust Anchor Library section of the [CAL Release Notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=TALIB_SETUP&version=latest&redirect=true).
 
 ## Running the Demo
 1. Launch the MPLAB® X IDE and load the "dsPIC33CK512MPT608_provision_prototyping.X" project.
 
 2. Launch MCC Melody.
 
-3. Right-click on the "Generate" button and select the "Force Update on All" option.
+3. Right-click on the "Generate" button and select the "Force Update on All" option. This will generate files for the MCC Melody Trust Anchor Library that we added to the project in the TALib Setup step.
 
     ![Select Force Update](images/force_update.JPG)
 
@@ -94,7 +103,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
 ### TPDS 
 
-1. Launch the Trust Platform Design Suite (TPDS).
+1. Launch the Trust Platform Design Suite.
 
 2. Select the "Configurators" tab at the top.
 
@@ -149,7 +158,7 @@ The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure
 
     ![Select a SPI peripheral](images/select_peripheral.JPG)
 
-8. Toggle the "Enable Kit Protocol" option so that kit protocol is selected.
+8. Toggle the "Enable Kit Protocol" option so that Kit Protocol is selected.
 
     ![Enable Kit Protocol](images/enable_kit_protocol.JPG)
 
