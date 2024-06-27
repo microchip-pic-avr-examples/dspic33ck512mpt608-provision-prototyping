@@ -1,0 +1,818 @@
+<config configName="default" projectName="dsPIC33CK512MPT608_provision_prototyping" configVersion="1.1" device="dsPIC33CK512MPT608" deviceLibraryClass="com.microchip.mcc.melody.Library" coreVersion="5.7.1">
+   <usedPackages class="java.util.ArrayList">
+      <package packageName="@mchp-mcc/clock-16bit-driver" version="1.2.1" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/crypto-authentication-library" version="5.8.0" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/dmt-16bit-driver" version="1.0.6" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/dspic33-configuration-bits" version="1.2.2" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/icd-16bit-driver" version="1.0.3" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/main-16bit-manager" version="1.1.2" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/pic-16bit" version="5.12.0" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/pic24-dspic33-clock-sib" version="1.4.2" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/pic24-dspic33-dmt-upb" version="1.1.1" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/pic24-dspic33-interrupt" version="1.3.1" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/pic24-dspic33-pin-manager" version="1.3.0" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/pic24-dspic33-reset" version="1.1.0" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/pic24-dspic33-spi-i2s-upb" version="1.3.0" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/pic24-dspic33-uart-protocol-upb" version="1.5.0" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/pic24-dspic33-wdt-upb-v1" version="1.2.1" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/pin-content-processor" version="3.8.0" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/trust-anchor-library" version="1.2.0" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/uart-driver" version="1.10.0" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/wdt-16bit-driver" version="1.0.8" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+   </usedPackages>
+   <usedClasses class="java.util.TreeMap">
+      <entry>
+         <string>Application Builder</string>
+         <string>class com.microchip.mcc.melody.module.FrameworkModule</string>
+      </entry>
+      <entry>
+         <string>Configuration Bits</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>DMT</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>ICD</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>INTERNAL OSCILLATOR</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>INTERRUPT CORE</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>MAIN MANAGER</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>Pin Manager</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>RESET</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>SPI1</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>UART1</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>WATCHDOG</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>meta</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>module0</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module1</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module11</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module2</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module23</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module3</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module37</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module4</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module46</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module5</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module57</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module6</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module75</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module79</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module91</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module96</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module97</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module99</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+   </usedClasses>
+   <usedLibraries class="java.util.ArrayList">
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.melody.Library" version="2.7.1"/>
+   </usedLibraries>
+   <tokenMap class="java.util.TreeMap">
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Application Builder" name="graph-location-data"/>
+         <value>{&quot;mccDevice&quot;:{&quot;loc&quot;:&quot;0 0&quot;,&quot;pos&quot;:&quot;0 0&quot;},&quot;systemGroup&quot;:{&quot;loc&quot;:&quot;0 -107&quot;,&quot;pos&quot;:&quot;0 -107&quot;},&quot;module46&quot;:{&quot;loc&quot;:&quot;393 -77&quot;,&quot;pos&quot;:&quot;393 -77&quot;},&quot;module23&quot;:{&quot;loc&quot;:&quot;196 0&quot;,&quot;pos&quot;:&quot;196 0&quot;},&quot;module99&quot;:{&quot;loc&quot;:&quot;590 -77&quot;,&quot;pos&quot;:&quot;590 -77&quot;},&quot;module11&quot;:{&quot;loc&quot;:&quot;196 -77&quot;,&quot;pos&quot;:&quot;196 -77&quot;},&quot;module96&quot;:{&quot;loc&quot;:&quot;393.5 -142.48984375&quot;,&quot;pos&quot;:&quot;393.5 -142.48984375&quot;}}</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Application Builder" name="state"/>
+         <value>{&quot;userAddedModules&quot;:[&quot;module5&quot;,&quot;module4&quot;,&quot;module6&quot;,&quot;module37&quot;,&quot;module1&quot;,&quot;module0&quot;,&quot;module3&quot;,&quot;module2&quot;,&quot;module75&quot;,&quot;module97&quot;,&quot;module57&quot;,&quot;module79&quot;,&quot;module46&quot;,&quot;module23&quot;,&quot;module99&quot;,&quot;module11&quot;,&quot;module91&quot;],&quot;version&quot;:&quot;CURRENT&quot;,&quot;modules&quot;:{&quot;module5&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/pic24-dspic33-clock-sib&quot;,&quot;imports&quot;:{&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;pin_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-standard&quot;,&quot;version&quot;:&quot;^0.1.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module4&quot;,&quot;exportId&quot;:&quot;pin-standard&quot;}},&quot;clk_sib_v12&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;clk_sib_v12&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;INTERNAL OSCILLATOR&quot;}},&quot;system_16bit_initializer&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;system-16bit-initializer&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module0&quot;,&quot;exportId&quot;:&quot;system_16bit_initializer&quot;}},&quot;config_16bit_interface&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;config-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;config_16bit_interface&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{}},&quot;module4&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/pin-content-processor&quot;,&quot;imports&quot;:{&quot;device-meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;pin-architecture&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-architecture&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module3&quot;,&quot;exportId&quot;:&quot;pin-architecture&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{&quot;saved&quot;:{&quot;rows&quot;:{&quot;module11&quot;:{&quot;UART1$U1TX$output&quot;:{&quot;pins&quot;:{&quot;RD1&quot;:{&quot;state&quot;:&quot;L&quot;}}}}},&quot;userEditedData&quot;:{&quot;inputPPSState&quot;:{&quot;module11&quot;:{&quot;UART1&quot;:{&quot;U1RX&quot;:&quot;RD2&quot;}}}}}}},&quot;module6&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/clock-16bit-driver&quot;,&quot;imports&quot;:{&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;clock_16bit_config_interface&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;clock-16bit-config-interface&quot;,&quot;version&quot;:&quot;^1.1.5&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module5&quot;,&quot;exportId&quot;:&quot;clock_16bit_config_interface&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{&quot;main&quot;:{&quot;systemClock&quot;:{&quot;mainClockSource&quot;:&quot;FRC Oscillator with PLL&quot;,&quot;setMaximumSystemFrequency&quot;:true}}}},&quot;module37&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/pic24-dspic33-wdt-upb-v1&quot;,&quot;imports&quot;:{&quot;wdt_upb_16bit_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;wdt_upb_16bit_v1&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;WATCHDOG&quot;}},&quot;clock_16bit_interface&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;clock-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module5&quot;,&quot;exportId&quot;:&quot;clock_16bit_interface&quot;}},&quot;config_16bit_interface&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;config-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;config_16bit_interface&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{}},&quot;module1&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/dspic33-configuration-bits&quot;,&quot;imports&quot;:{&quot;dspic33_configuration_bits&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;dspic33_configuration_bits&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;Configuration Bits&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{}},&quot;module0&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/main-16bit-manager&quot;,&quot;imports&quot;:{&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;main&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;main-16bit-manager&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;MAIN MANAGER&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{}},&quot;module3&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/pic24-dspic33-pin-manager&quot;,&quot;imports&quot;:{&quot;pic24-dspic33-pin-manager&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pic24-dspic33-pin-manager&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;Pin Manager&quot;}},&quot;device-meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;interrupt-16bit-interface&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;interrupt-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module2&quot;,&quot;exportId&quot;:&quot;interrupt_16bit_interface&quot;}},&quot;system-16bit-initializer&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;system-16bit-initializer&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module0&quot;,&quot;exportId&quot;:&quot;system_16bit_initializer&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{&quot;adapterdata&quot;:{&quot;pps&quot;:{&quot;data&quot;:{&quot;UART&quot;:{&quot;U1RX&quot;:&quot;RD2&quot;},&quot;UART1&quot;:{&quot;U1RX&quot;:&quot;RD2&quot;}},&quot;users&quot;:{&quot;module11&quot;:{&quot;mod_name&quot;:&quot;UART1&quot;}}}}}},&quot;module2&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/pic24-dspic33-interrupt&quot;,&quot;imports&quot;:{&quot;int_16bit_core_v3&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;int_16bit_core_v3&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;INTERRUPT CORE&quot;}},&quot;config_bit&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;config-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;config_16bit_interface&quot;}},&quot;system_16bit_initializer&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;system-16bit-initializer&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module0&quot;,&quot;exportId&quot;:&quot;system_16bit_initializer&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{}},&quot;module75&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/pic24-dspic33-reset&quot;,&quot;imports&quot;:{&quot;rst_sib_v2&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;rst_sib_v2&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;RESET&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{}},&quot;module97&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/dmt-16bit-driver&quot;,&quot;imports&quot;:{&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;dmt_16bit_interface&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;dmt-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module57&quot;,&quot;exportId&quot;:&quot;dmt_16bit_interface&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{}},&quot;module57&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/pic24-dspic33-dmt-upb&quot;,&quot;imports&quot;:{&quot;wdt_dmt_upb_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;wdt_dmt_upb_v1&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;DMT&quot;}},&quot;system_16bit_initializer&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;system-16bit-initializer&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module0&quot;,&quot;exportId&quot;:&quot;system_16bit_initializer&quot;}},&quot;interrupt_service&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;interrupt-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module2&quot;,&quot;exportId&quot;:&quot;interrupt_16bit_interface&quot;}},&quot;config_16bit_interface&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;config-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;config_16bit_interface&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{}},&quot;module79&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/wdt-16bit-driver&quot;,&quot;imports&quot;:{&quot;wdt_16bit_interface&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;wdt-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module37&quot;,&quot;exportId&quot;:&quot;wdt_16bit_interface&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{}},&quot;module46&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/uart-driver&quot;,&quot;imports&quot;:{&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;uart_basic&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;uart-basic&quot;,&quot;version&quot;:&quot;^6.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module11&quot;,&quot;exportId&quot;:&quot;uart_basic&quot;,&quot;label&quot;:&quot;UART1&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[&quot;uart_basic&quot;]},&quot;payload&quot;:{}},&quot;module23&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/pic24-dspic33-spi-i2s-upb&quot;,&quot;imports&quot;:{&quot;pin_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-standard&quot;,&quot;version&quot;:&quot;^0.1.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module4&quot;,&quot;exportId&quot;:&quot;pin-standard&quot;}},&quot;config_bit&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;config-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;config_16bit_interface&quot;}},&quot;spi_i2s_upb_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;spi_i2s_upb_v1&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;SPI1&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;clock_16bit_interface&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;clock-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module5&quot;,&quot;exportId&quot;:&quot;clock_16bit_interface&quot;}},&quot;system_16bit_initializer&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;system-16bit-initializer&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module0&quot;,&quot;exportId&quot;:&quot;system_16bit_initializer&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{}},&quot;module99&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/crypto-authentication-library&quot;,&quot;imports&quot;:{&quot;uart_basic_drv_interface&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;uart-basic-drv-interface&quot;,&quot;version&quot;:&quot;^2.1.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module46&quot;,&quot;exportId&quot;:&quot;uart_basic_drv_interface&quot;}},&quot;pins_interface&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pins-interface&quot;,&quot;version&quot;:&quot;^1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module4&quot;,&quot;exportId&quot;:&quot;pins-interface&quot;}},&quot;trust_anchor_library&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;trust-anchor-library&quot;,&quot;version&quot;:&quot;^1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module96&quot;,&quot;exportId&quot;:&quot;trust_anchor_library&quot;}},&quot;spi_master_basic&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;spi-master-basic&quot;,&quot;version&quot;:&quot;^0.5||^1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module23&quot;,&quot;exportId&quot;:&quot;basic_spi&quot;,&quot;label&quot;:&quot;SPI1&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;^1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;initializer_main&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-main&quot;,&quot;version&quot;:&quot;^0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module0&quot;,&quot;exportId&quot;:&quot;initializer_main&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;^0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module0&quot;,&quot;exportId&quot;:&quot;initializer_system&quot;}},&quot;project_properties&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;project-properties&quot;,&quot;version&quot;:&quot;^1.*&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;com.microchip.mcc.melody.adapter.ProjectConfigurationAdapter&quot;,&quot;exportId&quot;:&quot;project-properties&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[&quot;spi_master_basic&quot;]},&quot;payload&quot;:{&quot;main&quot;:{&quot;deviceSettings&quot;:{&quot;selectDevice&quot;:&quot;Internal Secure Subsystem&quot;},&quot;secureElementSettings&quot;:{&quot;enableKitProtocol&quot;:true}}}},&quot;module11&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/pic24-dspic33-uart-protocol-upb&quot;,&quot;imports&quot;:{&quot;pin_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-standard&quot;,&quot;version&quot;:&quot;^0.1.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module4&quot;,&quot;exportId&quot;:&quot;pin-standard&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;uart_protocol_upb_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;uart_protocol_upb_v1&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;UART1&quot;}},&quot;clock_16bit_interface&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;clock-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module5&quot;,&quot;exportId&quot;:&quot;clock_16bit_interface&quot;}},&quot;system_16bit_initializer&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;system-16bit-initializer&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module0&quot;,&quot;exportId&quot;:&quot;system_16bit_initializer&quot;}},&quot;interrupt_service&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;interrupt-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module2&quot;,&quot;exportId&quot;:&quot;interrupt_16bit_interface&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{}},&quot;module91&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/icd-16bit-driver&quot;,&quot;imports&quot;:{&quot;icd_v7&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;icd_v7&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;ICD&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;pin_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-standard&quot;,&quot;version&quot;:&quot;^0.1.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module4&quot;,&quot;exportId&quot;:&quot;pin-standard&quot;}},&quot;config_16bit_interface&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;config-16bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;config_16bit_interface&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{}}},&quot;activated&quot;:{&quot;module96&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/trust-anchor-library&quot;,&quot;exports&quot;:{&quot;trust_anchor_library&quot;:{&quot;interfaces&quot;:[{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;trust-anchor-library&quot;,&quot;version&quot;:&quot;1.0.0&quot;}}]}},&quot;payload&quot;:{},&quot;name&quot;:&quot;Trust Anchor Library&quot;,&quot;isSingletonPerDevice&quot;:true,&quot;isEntryPoint&quot;:false}},&quot;content&quot;:{&quot;@mchp-mcc/pic-16bit&quot;:&quot;5.12.0&quot;,&quot;@mchp-mcc/wdt-16bit-driver&quot;:&quot;1.0.8&quot;,&quot;@mchp-mcc/clock-16bit-driver&quot;:&quot;1.2.1&quot;,&quot;@mchp-mcc/pic24-dspic33-dmt-upb&quot;:&quot;1.1.1&quot;,&quot;@mchp-mcc/crypto-authentication-library&quot;:&quot;5.8.0&quot;,&quot;@mchp-mcc/pic24-dspic33-reset&quot;:&quot;1.1.0&quot;,&quot;@mchp-mcc/pic24-dspic33-clock-sib&quot;:&quot;1.4.2&quot;,&quot;@mchp-mcc/dmt-16bit-driver&quot;:&quot;1.0.6&quot;,&quot;@mchp-mcc/trust-anchor-library&quot;:&quot;1.2.0&quot;,&quot;@mchp-mcc/main-16bit-manager&quot;:&quot;1.1.2&quot;,&quot;@mchp-mcc/dspic33-configuration-bits&quot;:&quot;1.2.2&quot;,&quot;@mchp-mcc/pin-content-processor&quot;:&quot;3.8.0&quot;,&quot;@mchp-mcc/pic24-dspic33-wdt-upb-v1&quot;:&quot;1.2.1&quot;,&quot;@mchp-mcc/icd-16bit-driver&quot;:&quot;1.0.3&quot;,&quot;@mchp-mcc/pic24-dspic33-spi-i2s-upb&quot;:&quot;1.3.0&quot;,&quot;@mchp-mcc/pic24-dspic33-interrupt&quot;:&quot;1.3.1&quot;,&quot;@mchp-mcc/uart-driver&quot;:&quot;1.10.0&quot;,&quot;@mchp-mcc/pic24-dspic33-uart-protocol-upb&quot;:&quot;1.5.0&quot;,&quot;@mchp-mcc/pic24-dspic33-pin-manager&quot;:&quot;1.3.0&quot;}}</value>
+      </entry>
+   </tokenMap>
+   <generatedFileHashHistoryMap class="java.util.TreeMap">
+      <entry>
+         <file>main.c</file>
+         <hash>416f1c06ec13ed9d0e8ce1579f483c84eda95bf3b685646fd2b672b4b9bce3f3</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\CryptoAuth_init.c</file>
+         <hash>ba985730efed833ba995ee4dd516759fd2b921622ca7e6d31d5d58aa3a7423af</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\CryptoAuth_init.h</file>
+         <hash>f02cca044751be33a9a1e5ecd4629308455d629915fb5c524dcfb62637ac7118</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\CryptoAuth_pinsettings.c</file>
+         <hash>e6df6b8e0f31ba4d52ccedc80a26f5531030b7989b45a74154c059e351b66d69</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_basic.c</file>
+         <hash>01345fd08851a7649e6417b3adf984c5f320cf50c2a4d31ef61918466188de6d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_basic.h</file>
+         <hash>9bde8331f78ac3d4b1b32fd38ced2d499dda23f059dca905f44de9a309ab7a1c</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_bool.h</file>
+         <hash>e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_cfgs.c</file>
+         <hash>aa67b93096a3d786c10d0b661ccecef3b06029e667a76d3667841edd065231f8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_cfgs.h</file>
+         <hash>6e482117c2728541f4bf9787897ae27d6a1f1860d6d184e7d85a4470e94da3e9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_compiler.h</file>
+         <hash>5326e86d90deb5507e82d333763ef22d67a54d7353630cf482eb3992ec90fa39</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_config.h</file>
+         <hash>d376c536db72d922b5eb989f84146d46ea8b4eeb312d59232adf2a82842692b9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_config_check.h</file>
+         <hash>7359f302e1366124d8f30bf72f44e14117826355d364a29ed004cdf480320f71</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_debug.c</file>
+         <hash>b30e8eec74fbd6462b74e051f714fe2eadb91a9843ff3237809b5e2b13c9ee0a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_debug.h</file>
+         <hash>23a0ce23d39560842fce8c7ee682597744df8876c17707c9fecffa74e05089de</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_device.c</file>
+         <hash>3ea3fa403dcd9ace253fb40427c5054ad1a35d5d1ace84bf353b51e4a8f6b6a6</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_device.h</file>
+         <hash>4d0ce8180d214961a525b7fd390596a7018191cd0f0e06baa08c6a57c823c661</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_devtypes.h</file>
+         <hash>d17ff7d9db4c99af121765fe73526af1277d6fae3520e594dcc366c4bf406074</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_helpers.c</file>
+         <hash>ab593ee83c2b0f823a8c2df3bd54d1e767fcedc2b40a34479a0dd0e48cec5a33</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_helpers.h</file>
+         <hash>314c02699202976b697bb060a3a32d97509462c008f627ffa1d3f28966a0a6d9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_iface.c</file>
+         <hash>30556308058deae6206bbd74960b0d61447e9258dd6591d447bb1dbc8239a45d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_iface.h</file>
+         <hash>471b8623e8aa0facd05ab5679fa93d7deaaa4104bf7b59f4fee6c15c8f75da54</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_platform.h</file>
+         <hash>740a07d8ee7edc6eda180474bc9d60b3a4fb11afbdddfd9ebfa26cb64278989d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_status.h</file>
+         <hash>63c9129875c2a148883cf9bba5ee6766cc40b585cb7eff8b3ec7503a5355f5eb</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_utils_sizes.c</file>
+         <hash>f77665ec8afaefa3f3adad472bc83026234df436bc09a5628b291f273c824d48</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atca_version.h</file>
+         <hash>ac4bd3a099b90f04130e5db54be33a668ae4c3250a76087fbcf247fdbc6e4033</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert.h</file>
+         <hash>f5cf03eb1dc1a2a2bb2e554407ec4efd7242421e812d0f92a046af40cda1b57e</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_check_config.h</file>
+         <hash>6c3873e130dd4df815f9e4b4359adf49476df15136f910f48dc9e5ccf8798335</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_client.c</file>
+         <hash>a28971728b2c2bf2f72edf8b2208709a768fdfaaf0fcce897fddc74f946c065f</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_client.h</file>
+         <hash>bd9d25ce5f05393fc56856b6158dab6cf21b2a42e7c21f237fd8e52957ac924b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_date.c</file>
+         <hash>1b989c9cca35dcf99a68e4cdcd7d4010c9bf0a8af3fba6a9ddea3b17f9ac4048</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_date.h</file>
+         <hash>a683c4f4d59247edaea2829fd647dcf1431113401d58443dbe66a07e46ce8efb</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_def.c</file>
+         <hash>91fa5f35bb1ae45d66542f0d955ca1c43de751435fcdafe20e6c66a22d28683f</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_def.h</file>
+         <hash>955bda2656a27bd49331753c0bbca460d2c96ed5f378017ee809e222af95ddba</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_der.c</file>
+         <hash>724380289468c8ef25d3ebcf387a4e4a6ae15fa2592d6f789792f561d8ed29bf</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_der.h</file>
+         <hash>26e739d4476582bdb13e10f2c540e2412d834c4c719970b9027cf4fa97ba6bf0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_host_hw.c</file>
+         <hash>c9896a8b0ea6f8dca4435c9c16c4253da6f6e356a4ebe3d213ddc5a3b2601c22</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_host_hw.h</file>
+         <hash>2ed95e40df007df994226cae1d7e6a727e639d741c78d5d9b3d456d619abce5b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_host_sw.c</file>
+         <hash>3c4e49c4e6f6d62ed49e01027155fa0933dee401aa14eb56b26be95fc8239b33</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_host_sw.h</file>
+         <hash>9e6e3c7b9551150f19578e379d2b2b201473755832de60fdc22f42844a163e24</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_pem.c</file>
+         <hash>5113ca75a23201f70b544f6acbea15f7c0f4cbf8c317709c5f80a63b25087f12</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\atcacert\atcacert_pem.h</file>
+         <hash>2625b1781e9b4c164c9b3a71263e5af64650dc8a55d8cf5acd2f63829ec4fbaf</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\calib\calib_aes_gcm.h</file>
+         <hash>066b41d4729ef3f29f7c67aab9a28d83c75339f1933c0fa6acc5ef8a47793bdf</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\calib\calib_basic.h</file>
+         <hash>0a21e7f98289bee72c31c94fc961d33c2122c9e280c2c6399fef3d2582824e3d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\calib\calib_command.h</file>
+         <hash>9c8aa5f7c276486c19aaeae9c3689b4b7958a7319e8dd8306fa0d2fd8c2fb7fb</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\calib\calib_config_check.h</file>
+         <hash>9f469dabb5e99454424a90891ddba761cfa99fa7aa1b90387218712ff2704507</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\calib\calib_device.h</file>
+         <hash>69c13dbeac141a1def1f0305ca3c44a2d2389b58c359ef256ba70e0371d9764f</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\calib\calib_execution.h</file>
+         <hash>ce9aab10576a5eb139c8fbcfdf6219d45e09bda1965bc6c36b0145d83581b1e3</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\atca_crypto_hw_aes.h</file>
+         <hash>5783a16406a2942f948d3a37da739a351ea70f90cf83328ed8b0082523d2db2b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\atca_crypto_hw_aes_cbc.c</file>
+         <hash>8ad946acc145a0ee25638e117e8e139ce13bf1d2736867bc68f62745975e8a49</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\atca_crypto_hw_aes_cbcmac.c</file>
+         <hash>a14754e15911a444699c3e917de1c03a70df48eeb957252d467b49de83d37abc</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\atca_crypto_hw_aes_ccm.c</file>
+         <hash>d67489c8547af8805afa7c7e646e885dafe730665ae003456c386e1517c3161c</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\atca_crypto_hw_aes_cmac.c</file>
+         <hash>7e867ced83d44f046fbd1280fff1ae9bd16448ceb42cc0bab6e2d060bec7dab1</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\atca_crypto_hw_aes_ctr.c</file>
+         <hash>6073958d9cc6a66b1ccc4419f957b4adb05dabc97da417a11ac4260cb43e0555</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\atca_crypto_pad.c</file>
+         <hash>8c59e1290964ecc5f7292f25ec4e6317cb5a5a33fecd27003847044420aaadba</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\atca_crypto_sw.h</file>
+         <hash>af114c2c086bcedb076585ee387fc475635003b1d5aca7fd0019a012ab88f7b2</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\atca_crypto_sw_sha1.c</file>
+         <hash>c217355f689b912ee9b0a55ff3608add970ef11706e4305dd02db8298ca9ac12</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\atca_crypto_sw_sha1.h</file>
+         <hash>d0b9a078037ad20658119910aaa7a0ec7a62acf6a5cced01032dbf61addccd32</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\atca_crypto_sw_sha2.c</file>
+         <hash>9ddbc9d3269fe020e6b00aa222d6e39808f06f77a6cb49ab9bc1ce465056ec41</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\atca_crypto_sw_sha2.h</file>
+         <hash>42a0d04d3d8f7da6c0502055f37f69b50dda598343269e43e562c02711f8add2</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\crypto_config_check.h</file>
+         <hash>1d178822b3821472cdfaeafc7d8189d031dbf10261bae4dc0def6a3d3600cb24</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\hashes\sha1_routines.c</file>
+         <hash>9fb6e15e153c065be65424ae442a65ce73f750ef4772e4e9412a27bbf43f1a44</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\hashes\sha1_routines.h</file>
+         <hash>137021bbf1f5524ec603c82c83b918ad9a7f64cd6fb933477b7cbd2949554557</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\hashes\sha2_routines.c</file>
+         <hash>8559b1cdd14b3366bf864dbf0c55779a0a6afc4f2cd0e8f294798a8936af95d2</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\crypto\hashes\sha2_routines.h</file>
+         <hash>8c318d84c680536e86cfde387928b7aaa72752aebf4acdc38d15852b14102b29</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\cryptoauthlib.h</file>
+         <hash>ad598360cba34e8e034ef5a118c895e030114987f08f06f0b7d270a67ee94c3f</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\hal\atca_hal.c</file>
+         <hash>378561af6fbac6aac837ffcf0c8edc75ca5fad732f505b9cd5b74f2ed407ff81</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\hal\atca_hal.h</file>
+         <hash>2a41fe724f7874fbbf4c72010d50dfd9eeb58405b2076fb9fda0ae2f43c46c1d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\hal\atca_spi_hal.c</file>
+         <hash>553c0fe0054667d2de8743cc1c1c7533c4299da3d0bc72a16aa5ebb52c804d28</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\hal\atca_start_config.h</file>
+         <hash>e3421a3960431265ab30114041fe1fe8aeec4985e5d887d05d4b9176211c1694</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\hal\atca_start_iface.h</file>
+         <hash>e3421a3960431265ab30114041fe1fe8aeec4985e5d887d05d4b9176211c1694</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\hal\atca_uart_hal.c</file>
+         <hash>e8775923528716b3d3507b1bb27810859d5280d94f7815c62d6a30dc97dc7631</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\hal\hal_timer.c</file>
+         <hash>e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\hal\hal_timer_dspic_pic24.c</file>
+         <hash>df5fb258535873991a6a1cfd3241fe1b642b7ec71889032ff248bc3fdcd161ab</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\hal\kit_protocol.c</file>
+         <hash>753c56c8e60cf75cf662b79e253a2c263ce3a8d9ca348e5bba4b61d2f7b4cc31</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\hal\kit_protocol.h</file>
+         <hash>03360d422b3ded1e3dc4b7a397e52a0ba94380a8675ef5286bc0cd4a3c1f0c29</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\hal\swi_uart_samd21_asf.h</file>
+         <hash>57260acff0f2c9c8f952975ccf6541841ceb9450b52f2b05dd1ec3bc61d93521</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\hal\swi_uart_start.h</file>
+         <hash>a47db9006f4ab108749093e55832f7ab0db2e3ac229ea30ba6cec39425db5f58</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\host\atca_host.c</file>
+         <hash>34694b64fa6451ce0c0f42047358545d4ca69ac7d95844fd13c13d18b5b0cc2c</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\host\atca_host.h</file>
+         <hash>cbfa30747eda40a5129ddf6fbf8d981c8b31b0a9c92d2ab613b9b4132175bb24</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\host\atca_host_config_check.h</file>
+         <hash>50ad9946874fb50f12d9292978d19004928dd253d8a236f8275999122e92fcf3</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\kit_host\ascii_kit_host.c</file>
+         <hash>c58749fc15975d451482f39b627491c92b18d2b7126c7531f37762172ebf15bb</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\kit_host\ascii_kit_host.h</file>
+         <hash>5800f179092dfe6a0ac6c5e79ba580a97c35610d8282d1b3d5226babafaad65a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\kit_host\kit_host_init.c</file>
+         <hash>0965c684cb8048513ccab963599370b7c109145aa808f321e7037168082c1aba</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\kit_host\kit_host_init.h</file>
+         <hash>10d780ffa3e544f060c06f2ee4ae5edbcec399756443b46298fe86d3ea70c479</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\README.md</file>
+         <hash>cc62e86b49588863331e85feab5816fe0f65486bee211018a38b563d89a41a2f</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\microchip_nondisclosure_agreement_reminder.md</file>
+         <hash>42858bcbcf589ec0ca172d51fb205dd2c8f73607b7bd0833c7d939a3a48551d6</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_aes.c</file>
+         <hash>7ec5b7c3b114fa921e32cabe4cb6893a6333cefac21ab3e19c9c7a7a5166daff</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_auth.c</file>
+         <hash>2a404662a6f34b4fa8ce47c47a6c26f7f8fc5b8ff11cb096e143fd0c8b955902</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_basic.c</file>
+         <hash>a4b3af28fcec7d91d2624ff12754f9d71ddfa00043adf3a9578122dead364aa7</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_basic.h</file>
+         <hash>d50b18dd5ab01d71d9597782ac1913823472cc435497af44f5c4e4d4518dc466</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_config_check.h</file>
+         <hash>fdb2b7eb562e54949873164f7bf4c1bd3a49308023941a55aaf651b0372c4a50</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_counter.c</file>
+         <hash>8dc318089179cc151b17305e799bc6324b23a4d7333f1ad89af79c04ca1d014e</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_crc.c</file>
+         <hash>6bdd2097815f3346f4ed2d1cbfca1578d2782e2d34cbc31f219aaf6d5bfd5ebe</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_crc.h</file>
+         <hash>9ec4ebc103acc986f3b3be88ac8c86a3ed7d3ab6ea93217fb08b41fd1ed86d9a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_create.c</file>
+         <hash>f291c3c2365abd16f426a005ece73fc26f31a18b42262b2bde710c112bf1e21c</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_defines.h</file>
+         <hash>534fa4c6349b10cdb9ce077e3596a420aa554fd22c90c805a831352a6ab17977</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_delete.c</file>
+         <hash>7f2576b2735235722f7bf69d813924ffd78fec95ffa29a107305953606a1905f</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_devupdate.c</file>
+         <hash>9ce60e26808dcae530bbd716013a60a47ef69704ea708360e50bc7bc46c50cc8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_ecdh.c</file>
+         <hash>bd9f65c910f4c2841aed921a6ef44f8be4741f3cdb400a3a603e8dbd7fb3a8b1</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_execution.c</file>
+         <hash>53d4299fc30233b7e60dd0641378e0cf665d01d3e8bf8032102fe33e8c5fa98b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_execution.h</file>
+         <hash>33c9719668d12ec03f62faf19bb058efac707ead9b8250d9bef41e788e530c56</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_export.c</file>
+         <hash>96c8f5e8fbabbeac83842c9125c3b338f2b5796ff3ec94a887b356a14b0accef</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_fcconfig.c</file>
+         <hash>10a239888a9b5742df44e93240e7a7dd92af86a011b9ab097932434a06a6842b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_fce.c</file>
+         <hash>4bcd95c10531d0358e26f2fd6ac7101eccb8e925abdbfe60ce6b77893314b209</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_fce.h</file>
+         <hash>e2e21aa05dc766cd5ba0723dffc02599d5447870a680c79244ada9b14ea1fd50</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_genkey.c</file>
+         <hash>757418e83eda77ecf1b13dba0dabb5b6855ca8e142156fe1b025522543b2a59a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_handle.c</file>
+         <hash>0ad99903e7b11fd5dc11497db8ddc6c33b595203a135ab2742c06c48f3e4b5cb</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_import.c</file>
+         <hash>e9ab6f4552452e2281e3f7c68a5574b54fd22ed37cfcc66e54e437e14de2eec4</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_info.c</file>
+         <hash>e7eb462c3ab5ae09659b3c0b4c6569e70db09d2e9784fb7f0d103dae807d72e2</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_kdf.c</file>
+         <hash>2dc029031115f5cd9cd8453b919528e0ecddef1b8e53bb3863de5f5888f8cb87</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_lock.c</file>
+         <hash>e82c531e6054701a02773e22eedfd8efff63c53e321515d6c50b66ca5df0febd</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_mac.c</file>
+         <hash>134b95a34e8cacc05c58f2ba616c28446329443fc52475686ed6b957a6f11648</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_managecert.c</file>
+         <hash>738aff4cc6a1f9993b809d1cc2299c5881756901226daa15d7937fb8583f5308</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_packet.c</file>
+         <hash>419f8d3822165fe1208bede6cfc00c9174e85d0fe212e982f275c4c15c2bd1f5</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_packet.h</file>
+         <hash>fd63a1034d91a781d553a8a1df676c6b63d1801d151838fa3698f37f6172f0b6</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_power.c</file>
+         <hash>b3626cf3f26d488d14799940b69ec2dab0ddeb6cefa9887555a02fe0f152c908</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_random.c</file>
+         <hash>1676b7f74d274c6b93987e27cf04c74e38cf2c22f39c852df540c1ef3d7dc1c2</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_read.c</file>
+         <hash>bf86d6eb8189fda0db29f41f3bff54eac6ea412f2eff90360ab5a5ac31ef28dd</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_rsaenc.c</file>
+         <hash>6877d3a83f18b87fd2b6904a47e708927746d2f01129151a90d650f4ca40f110</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_secureboot.c</file>
+         <hash>5b54a5652edca2854f83a12d31ea286d722a07bb6b0d824153829989e17ed74f</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_selftest.c</file>
+         <hash>2f876df60cb48aef9e1fd22e94caf9566ff78023b3cd74a70c5354bfe4b89aac</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_sequence.c</file>
+         <hash>3883854cc74213e81f4ed51e389e34bd2da34723ebdf7a3a2203f0be4193875b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_sha.c</file>
+         <hash>5b9376286fb1ec9e49e7bdc733f3bb3d1059670aace3c61395b1448550038c8b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_sign.c</file>
+         <hash>02846c6f0129e0a6960de75aec899098cedde1d149bc2aae50344b61438aa725</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_status.h</file>
+         <hash>e760824e95e27e886263c73fc19761a91689834c66e2ef8ac8c729a75e2cc105</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_verify.c</file>
+         <hash>74956caa5cb91ff1ed1db9cba1a2bcc80d40d5553378472575a7dbac213433c4</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\CryptoAuthenticationLibrary\talib\talib_write.c</file>
+         <hash>a31e68a01bcbe73908a4da65f141fc52a67eb93e515ce4eb454517c781ba6c17</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\spi_host\spi1.h</file>
+         <hash>30893aa8b776a8b1d0be7dc29c0bf934756d1049efe250bdc76321a4a9915582</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\spi_host\spi_host_interface.h</file>
+         <hash>31d5d40e60864924f3fdf42ff78310cef9b224859e7dbd4a1273aa5c07a2ea33</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\spi_host\src\spi1.c</file>
+         <hash>1d2f8eee38b3efb07d86a7b76595e7d2305fe9d5151164fc759cc3e7d3bdb9a0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\clock.h</file>
+         <hash>035eb8af3645b916b8b71443e6253597e702db35c236224af5792feb97a4ca99</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\dmt.h</file>
+         <hash>c99aadb86de2198c096f6afafc87a36adc8f036d3decf2486390e4c314528186</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\interrupt.h</file>
+         <hash>e2ff6ee0073c9f8dec5ff6d8ec6edde21f6812e539355f004462759fed484ca8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\interrupt_types.h</file>
+         <hash>fea52802048023c3d8f7cf16eedeb4a0123f65ef5b1a5ba4be72ed1de43fa175</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\pins.h</file>
+         <hash>89ad200c1b2be11a2a5af554b2d397a34e319d568cb749c4e57fa091d2fd501a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\reset.h</file>
+         <hash>e27dfa272b63df50296c28b88f70e4a320c93a524bc31650cddf5f6cba2c16a8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\reset_types.h</file>
+         <hash>7b807b2267ab808789b2ddaef1a6f45e0aac123a6ff8ded4d9ce20e3d26036ab</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\clock.c</file>
+         <hash>f47b97384792cf9875abb72dc15d085d86f5ebef7c7c7d22a84d9dae452209b6</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\config_bits.c</file>
+         <hash>31b4cc89801d7f7d50a425ad98eea1614dc13a729edee36d2f2e3bed553565e6</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\dmt.c</file>
+         <hash>90d079b193ead174c9aa1688c6c96e0a4d90ee91bc3a985bf13f4ecbfc72b59b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\dmt_asm.s</file>
+         <hash>271c4062c099efbef22afabccb6f7e2a27312dae5ad187d31ef563ce198c560d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\interrupt.c</file>
+         <hash>c147a652c58907b7af1c643153362f3ece6fdb3a2395e086631abeac269dac5f</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\pins.c</file>
+         <hash>8e2bd0761d2fd7a7c8ca9ad120230295374a8b5bb052610dbc4ecce4e0d8af3b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\reset.c</file>
+         <hash>cc09143d137ba31c71634b242bc2cbffb08925dd9a7d21cf7fe1189e7ad6c4a0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\system.c</file>
+         <hash>0762ecca28d49f0baa91e0e951720b7e17ecded50ee2cad96580fbe9121c9414</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\traps.c</file>
+         <hash>c43e4d7d3b9f77bf90310a70428f4fbe923a44b6d4ccceda816defe93f7dea95</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\system.h</file>
+         <hash>25ebbde473559e9928c40f25f3f047ed66d45fa5c8aa7857ca6b84382c9bc645</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\system_types.h</file>
+         <hash>47f2ca4fb6aaa4e6e97636c7d4246be9b324ce94d78a6084ceba922450bf1b4e</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\traps.h</file>
+         <hash>c0a99015349306c2fd93f8a251ab096efc91f0f42192d527e835942bd49456d5</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\watchdog.h</file>
+         <hash>d306e6fafec6438359cf213b125472d1c2731ca897702f88fe2ae6619a580733</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\uart\src\uart1.c</file>
+         <hash>9d2b1c2e903d206de0b67873ac4dc4dd4fb3226a441dffbd59332fb4f445d3f1</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\uart\uart1.h</file>
+         <hash>73ec15dc15f38ba03731c6acffaf07d132eb09ea9408ea68bf77a2bc12e45555</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\uart\uart_interface.h</file>
+         <hash>0b351109cb078028e82303b345326009ae4676f0201f045768ff591d65c14a65</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\uart\uart_types.h</file>
+         <hash>fadadc21b0efa6c4d549082a62d0b108b032b3a0fde5bed45cfbaf8504a34c93</hash>
+      </entry>
+   </generatedFileHashHistoryMap>
+</config>
