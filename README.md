@@ -66,11 +66,7 @@ The Secure Document Extranet (SDE) is a platform available through the [myMicroc
 
 The Trust Platform Design Suite is an onboarding tool used for our security-related solutions. It is used to configure and generate provisioning information for secure elements like a Trust Anchor device through its configurators. TPDS can be used to prototype provision to quickly provision a secure element for testing purposes. Once users are ready to move to production, TPDS can be used to create a provisioning package with dummy keys that must be exchanged with Microchip support for an actual secure package.
 
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="images/code_example_diagram_dark.svg">
-	<source media="(prefers-color-scheme: light)" srcset="images/code_example_diagram_light.svg">
-    <img alt="Code Example Diagram" src="images/code_example_diagram_light.svg">
-</picture>
+<img src="./images/code_example_diagram.png" height="500" alt="Code Example Diagram"/>
 
 1. Install TPDS (https://www.microchip.com/tpds).
 
