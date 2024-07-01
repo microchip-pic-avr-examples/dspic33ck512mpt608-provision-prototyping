@@ -4,7 +4,7 @@
    "content":{
       "metaDataVersion":"1.3.0",
       "name":"com.microchip.mplabx.project.dspic33ck512mpt608-provision-prototyping",
-      "version":"1.0.0",
+      "version":"1.0.1",
       "displayName":"dsPIC33CK512MPT608 Provision Prototyping",
       "projectName":"dspic33ck512mpt608-provision-prototyping",
       "shortDescription":"The dsPIC33CK512MPT608 Provision Prototyping code example shows how to configure the Crypto Authentication Library to provision prototypes using the Trust Platform Design Suite (TPDS). TPDS uses Kit Protocol on device to provision the prototypes.",
