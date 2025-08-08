@@ -16,7 +16,7 @@
 */
 
 /*
-© [2024] Microchip Technology Inc. and its subsidiaries.
+© [2025] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -130,7 +130,7 @@ extern const struct SPI_HOST_INTERFACE spi1;
 enum SPI1_HOST_USER_CONFIG{
      /**Custom name for configuration setting:
     SPI Mode : Mode 0, Sampled at : Middle, Clock Frequency : 1000 kHz**/
-    CrytoAuthenticationLibrary,
+    CryptoAuthenticationLibrary,
     
 };
 

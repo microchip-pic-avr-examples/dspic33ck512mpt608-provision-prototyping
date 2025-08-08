@@ -4,7 +4,7 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>dsPIC33CK512MPT608_provision_prototyping</name>
-            <creation-uuid>90d71aaf-5dc6-47c1-b21f-c30b491d7388</creation-uuid>
+            <creation-uuid>259714f6-eb10-4b48-8890-b203cf913f0d</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
