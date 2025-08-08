@@ -19,20 +19,20 @@ The [dsPIC33CK512MPT608](https://www.microchip.com/dsPIC33CK512MPT608) device is
 - [Secure Element Provision Prototyping Documentation](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true)
 
 ## Software Used 
-- MPLAB® X IDE **6.20** or newer (https://www.microchip.com/MPLABXIDE)
-- MPLAB® XC-DSC Compiler **3.00** or a newer compiler (https://www.microchip.com/xcdsc)
-- MPLAB® Code Configurator (MCC) Plugin **5.5.1** or newer (https://www.microchip.com/mcc)
+- MPLAB® X IDE **6.25** or newer (https://www.microchip.com/MPLABXIDE)
+- MPLAB® XC-DSC Compiler **3.21** or a newer compiler (https://www.microchip.com/xcdsc)
+- MPLAB® Code Configurator (MCC) Plugin **5.5.2** or newer (https://www.microchip.com/mcc)
 - MPLAB® Code Configurator (MCC) Core **5.7.1** or newer (https://www.microchip.com/mcc)
-- MPLAB® Code Configurator (MCC) Melody **2.7.1** or newer (https://www.microchip.com/melody)
-- Crypto Authentification Library **5.8.0** or newer (https://www.npmjs.com/package/@mchp-mcc/crypto-authentication-library)
-- Trust Anchor Library **1.2.0** or newer
+- MPLAB® Code Configurator (MCC) Melody **2.9.2** or newer (https://www.microchip.com/melody)
+- Crypto Authentification Library **5.11.0** or newer (https://www.npmjs.com/package/@mchp-mcc/crypto-authentication-library)
+- Trust Anchor Library **2.1.0** or newer
 - Trust Platform Design Suite **2.3.9** or newer (https://www.microchip.com/tpds)
 
 ## Hardware Used
 
 - Explorer 16/32 Board (https://www.microchip.com/dm240001-2)
 - dsPIC33CK512MPT608 PIM (https://www.microchip.com/ev10h29a)
-- MPLAB® ICD 4 In-Circuit Debugger (https://www.microchip.com/dv164045) or MPLAB® PICkit™ 5 In-Circuit Debugger (https://www.microchip.com/PG164150) or MPLAB® PICkit™ 4 In-Circuit Debugger (https://www.microchip.com/PG164140)
+- MPLAB® PICkit™ 5 In-Circuit Debugger (https://www.microchip.com/PG164150) or MPLAB® ICD 4 In-Circuit Debugger (https://www.microchip.com/dv164045) or MPLAB® PICkit™ 4 In-Circuit Debugger (https://www.microchip.com/PG164140)
 
 ## Prerequisites
 
@@ -43,9 +43,9 @@ The Secure Document Extranet (SDE) is a platform available through the [myMicroc
 1. Follow the steps found in the "Request Access to Information About Specific Products" section of the [SDE User Guide](https://www.microchip.com/en-us/support/sde-user-guide) to request secure documents on myMicrochip.
 
 2. The items that are needed are covered under an NDA and need to be requested. The following need to be requested: 
-    - TA100-TCSM TPDS configurator (see ["TPDS Setup"](#tpds-setup))
+    - TA10x-TCSM TPDS configurator - v2.7.1 (see ["TPDS Setup"](#tpds-setup))
       - This configurator allows for TPDS to communicate and configure a TA100 secure element.
-    - TA-Lib-MCC
+    - TA-Lib-MCC - v2.1.0
       - Allows for the inclusion of Trust Anchor configuration in the MCC Melody CryptoAuthentication Library module.
     - TA100 Documentation
       - Provides information about the TA100 secure element.
@@ -70,7 +70,7 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
 1. Install TPDS (https://www.microchip.com/tpds).
 
-2. In order to provision the Trust Anchor element, an extension is required to enable Kit Protocol over UART. This allows TPDS to communicate with the hardware and the secure elements. Follow the instructions found in the "Trust Platform Design Suite Installation" section of the [CAL release notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to download and install the extension.
+2. In order to provision the Trust Anchor element, an extension is required to enable Kit Protocol over UART. This allows TPDS to communicate with the hardware and the secure elements. Follow the instructions found in the "Secure Element Provision Prototyping" section under "Trust Platform Design Suite Installation" section of the [CAL release notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to request and install the TA10x-TCSM TPDS configurator extension. 
 
 > **NOTE:** TPDS needs to be restarted before the changes are applied.
 
@@ -91,7 +91,7 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
     ![Generate Files Success](images/generation_success.JPG)
 
-5. When the merge window pops up, select the "Replace All" option to accept all changes.  
+5. When the merge window pops up, select the "Replace All" option to accept all changes for each file.  
 
     ![Replace All](images/force_replace_all.JPG)
 
@@ -105,7 +105,7 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
     <img src="./images/tpds_configurators_tab.JPG" height="400" alt="TPDS Configurators"/>
 
-3. Select the TA100 Configurator under the TrustCUSTOM Section.
+3. Select the TAx Configurator under the TrustCUSTOM Section.
 4. Update the Device Configuration Options:
     - Package Option: 8 Pin SOIC
     - I/O Type: SPI Interface
@@ -114,17 +114,23 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
     <img src="./images/TA100_settings.JPG" height="500" alt="TPDS Configurators"/>
 
-5. Click "Generate Provisioning Package"
+5. Select the "Generate/Program Package" dropdown and click "Generate Provisioning Package"
 
     ![Generate Provisioning Package](images/generate_provisioning_package.JPG)
 
-    - Successful generation will result in the following popup:
+    - After saving the generated zip a successful generation dialog will popup:
 
         ![Successful Generation](images/generate_provisioning_package_success.JPG)
 
-6.  Click "Provision Prototype Samples"
+6.  Select the "Generate/Program Package" dropdown and click "Provision Prototype Samples"
 
     ![Provision Prototype Samples](images/provision_prototype_samples.JPG)
+
+    - A popup to select a board to provision with will appear. Select the Explorer 16/32 Board (DM240001-2)
+
+    ![Select a Board](images/select_explorer_board.JPG)
+
+    - Then select the "Provision Prototype Samples" button
 
     - Successful provisioning will result in the following popup:
 
@@ -164,10 +170,14 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
     ![Set that UART pins](images/select_UART_pins.JPG)
 
-10. Click the "Generate" button. The CAL files should generate successfully.
+10. Set the system clock of the device to maximum
+
+    ![Maximum system clock ](images/maximum_system_clock.JPG)
+
+11. Click the "Generate" button. The CAL files should generate successfully.
 
     ![Generate Files Success](images/generation_success.JPG)
 
-11. Make and program the device.
+12. Make and program the device.
 
-12. Follow the steps listed under "Running the Demo -> TPDS" to provision prototypes.
+13. Follow the steps listed under "Running the Demo -> TPDS" to provision prototypes.
