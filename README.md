@@ -19,14 +19,14 @@ The [dsPIC33CK512MPT608](https://www.microchip.com/dsPIC33CK512MPT608) device is
 - [Secure Element Provision Prototyping Documentation](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true)
 
 ## Software Used 
-- MPLAB® X IDE **6.25** or newer (https://www.microchip.com/MPLABXIDE)
+- MPLAB® X IDE **6.25** (https://www.microchip.com/MPLABXIDE)
 - MPLAB® XC-DSC Compiler **3.21** or a newer compiler (https://www.microchip.com/xcdsc)
-- MPLAB® Code Configurator (MCC) Plugin **5.5.2** or newer (https://www.microchip.com/mcc)
-- MPLAB® Code Configurator (MCC) Core **5.7.1** or newer (https://www.microchip.com/mcc)
-- MPLAB® Code Configurator (MCC) Melody **2.9.2** or newer (https://www.microchip.com/melody)
-- Crypto Authentification Library **5.11.0** or newer (https://www.npmjs.com/package/@mchp-mcc/crypto-authentication-library)
+- MPLAB® Code Configurator (MCC) Plugin **5.5.2** (https://www.microchip.com/mcc)
+- MPLAB® Code Configurator (MCC) Core **5.7.1** (https://www.microchip.com/mcc)
+- MPLAB® Code Configurator (MCC) Melody **2.9.2** (https://www.microchip.com/melody)
+- Crypto Authentification Library **5.11.0** (https://www.npmjs.com/package/@mchp-mcc/crypto-authentication-library)
 - Trust Anchor Library **2.1.0** or newer
-- Trust Platform Design Suite **2.3.9** or newer (https://www.microchip.com/tpds)
+- Trust Platform Design Suite **2.3.9** (https://www.microchip.com/tpds)
 
 ## Hardware Used
 
@@ -60,7 +60,7 @@ The Secure Document Extranet (SDE) is a platform available through the [myMicroc
 
 2. Connect the board to the computer using a USB cable, connecting to the Serial port.
 
-    <img src="./images/hardware_setup.jpg" height="400" alt="Hardware Setup"/>
+    <img src="./images/hardware_setup.JPG" height="400" alt="Hardware Setup"/>
         
 ### TPDS Setup
 
@@ -114,7 +114,7 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
     <img src="./images/TA100_settings.JPG" height="500" alt="TPDS Configurators"/>
 
-5. Select the "Generate/Program Package" dropdown and click "Generate Provisioning Package"
+5. Select the "Generate/Program Package" dropdown and click "Generate Proto Provisioning Package"
 
     ![Generate Provisioning Package](images/generate_provisioning_package.JPG)
 
@@ -181,3 +181,11 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 12. Make and program the device.
 
 13. Follow the steps listed under "Running the Demo -> TPDS" to provision prototypes.
+
+
+
+# Version Compatability
+|MPT Code Example|TPDS|TA Configurator|MCC CAL|TAlib|
+|---|---|---|---|---|
+|v1.0.0|2.3.9|TA100 Configurator (Legacy)|v5.8.0|v1.2.0|
+|v1.1.0|2.3.9|TA10x Configurator|v5.11.0|v.2.0.0|
