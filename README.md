@@ -187,5 +187,5 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 # Version Compatability
 |MPT Code Example|TPDS|TA Configurator|MCC CAL|TAlib|
 |---|---|---|---|---|
-|v1.0.0|2.3.9|TA100 Configurator (Legacy)|v5.8.0|v1.2.0|
-|v1.1.0|2.3.9|TA10x Configurator|v5.11.0|v.2.1.0|
+|v1.0.1|2.3.9|TA100 Configurator (Legacy)|v5.8.0|v1.2.0|
+|v1.0.2|2.3.9|TA10x Configurator|v5.11.0|v.2.1.0|
