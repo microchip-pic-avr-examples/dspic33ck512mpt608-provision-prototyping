@@ -1,13 +1,13 @@
-# dsPIC33CK512MPT608 Provision Prototyping v1.1.0
+# dsPIC33CK512MPT608 Provision Prototyping v1.0.2
 
 ### Release Highlights
 - Update to support the latest TA10x-TCSM TPDS configurator
 
 ### Features Added\Updated
-- Update to readme to walthrough the latest TA10x-TCSM TPDS configurator
+- Updated demo operation to use latest TA10x-TCSM TPDS Configurator.
 - Update the following content versions to the latest:
-    - Crypto Authentification Library v5.11.0
-    - Trust Anchor Library v2.1.0
+    - MCC Melody Crypto Authentication Library v5.11.0
+    - MCC Melody Trust Anchor Library v2.1.0
 
 # dsPIC33CK512MPT608 Provision Prototyping v1.0.1
 
