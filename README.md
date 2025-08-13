@@ -60,7 +60,7 @@ The Secure Document Extranet (SDE) is a platform available through the [myMicroc
 
 2. Connect the board to the computer using a USB cable, connecting to the Serial port.
 
-    <img src="./images/hardware_setup.JPG" height="400" alt="Hardware Setup"/>
+    <img src="./images/hardware_setup.jpg" height="400" alt="Hardware Setup"/>
         
 ### TPDS Setup
 
@@ -85,15 +85,15 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
 3. Right-click on the "Generate" button and select the "Force Update on All" option. This will generate files for the MCC Melody Trust Anchor Library that we added to the project in the TALib Setup step.
 
-    ![Select Force Update](images/force_update.JPG)
+    ![Select Force Update](images/force_update.jpg)
 
 4. Click the "Generate" button. The CAL files should generate successfully.
 
-    ![Generate Files Success](images/generation_success.JPG)
+    ![Generate Files Success](images/generation_success.jpg)
 
 5. When the merge window pops up, select the "Replace All" option to accept all changes for each file.  
 
-    ![Replace All](images/force_replace_all.JPG)
+    ![Replace All](images/force_replace_all.jpg)
 
 6. Make and program the device.
 
@@ -103,7 +103,7 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
 2. Select the "Configurators" tab at the top.
 
-    <img src="./images/tpds_configurators_tab.JPG" height="400" alt="TPDS Configurators"/>
+    <img src="./images/tpds_configurators_tab.jpg" height="400" alt="TPDS Configurators"/>
 
 3. Select the TAx Configurator under the TrustCUSTOM Section.
 4. Update the Device Configuration Options:
@@ -112,29 +112,29 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
     - Config Memory Lock: Unchecked
     - Setup Lock: Unchecked
 
-    <img src="./images/TA100_settings.JPG" height="500" alt="TPDS Configurators"/>
+    <img src="./images/TA100_settings.jpg" height="500" alt="TPDS Configurators"/>
 
 5. Select the "Generate/Program Package" dropdown and click "Generate Proto Provisioning Package"
 
-    ![Generate Provisioning Package](images/generate_provisioning_package.JPG)
+    ![Generate Provisioning Package](images/generate_provisioning_package.jpg)
 
     - After saving the generated zip a successful generation dialog will popup:
 
-        ![Successful Generation](images/generate_provisioning_package_success.JPG)
+        ![Successful Generation](images/generate_provisioning_package_success.jpg)
 
 6.  Select the "Generate/Program Package" dropdown and click "Provision Prototype Samples"
 
-    ![Provision Prototype Samples](images/provision_prototype_samples.JPG)
+    ![Provision Prototype Samples](images/provision_prototype_samples.jpg)
 
     - A popup to select a board to provision with will appear. Select the Explorer 16/32 Board (DM240001-2)
 
-    ![Select a Board](images/select_explorer_board.JPG)
+    ![Select a Board](images/select_explorer_board.jpg)
 
     - Then select the "Provision Prototype Samples" button
 
     - Successful provisioning will result in the following popup:
 
-        ![Successful Provisioning](images/successful_provisioning.JPG)
+        ![Successful Provisioning](images/successful_provisioning.jpg)
 
 ## Appendix
 
@@ -146,37 +146,37 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
 4. Add the Crypto Authentication Library (CAL).
 
-    <img src="./images/add_cal.JPG" height="400" alt="Add CAL"/>
+    <img src="./images/add_cal.jpg" height="400" alt="Add CAL"/>
 
 5. Open the Easy View to see the CAL settings. 
 
 6. In the "Device" dropdown, select "Internal Secure Subsystem."
 
-    ![Select Internal Secure Subsystem](images/select_internal_secure_subsystem.JPG)
+    ![Select Internal Secure Subsystem](images/select_internal_secure_subsystem.jpg)
 
 7. The "Communication Peripheral" should be locked as "SPI." Select a SPI PLIB in the "SPI Host Dependency" dropdown.
 
-    ![SPI is locked](images/spi_locked.JPG)
+    ![SPI is locked](images/spi_locked.jpg)
 
-    ![Select a SPI peripheral](images/select_peripheral.JPG)
+    ![Select a SPI peripheral](images/select_peripheral.jpg)
 
 8. Toggle the "Enable Kit Protocol" option so that Kit Protocol is selected.
 
-    ![Enable Kit Protocol](images/enable_kit_protocol.JPG)
+    ![Enable Kit Protocol](images/enable_kit_protocol.jpg)
 
 9.  Set the UART pins. 
     - U3RX: RD2
     - U3TX: RD1
 
-    ![Set that UART pins](images/select_UART_pins.JPG)
+    ![Set that UART pins](images/select_UART_pins.jpg)
 
 10. Set the system clock of the device to maximum
 
-    ![Maximum system clock ](images/maximum_system_clock.JPG)
+    ![Maximum system clock ](images/maximum_system_clock.jpg)
 
 11. Click the "Generate" button. The CAL files should generate successfully.
 
-    ![Generate Files Success](images/generation_success.JPG)
+    ![Generate Files Success](images/generation_success.jpg)
 
 12. Make and program the device.
 
