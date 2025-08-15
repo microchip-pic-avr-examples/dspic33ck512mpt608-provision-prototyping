@@ -1,7 +1,7 @@
 # dsPIC33CK512MPT608 Provision Prototyping v1.0.2
 
 ### Release Highlights
-- Update to support the latest TA10x-TCSM TPDS configurator
+- Update to the latest TA10x-TCSM TPDS configurator
 
 ### Features Added\Updated
 - Updated demo operation to use latest TA10x-TCSM TPDS Configurator
