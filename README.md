@@ -68,9 +68,39 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
 <img src="./images/code_example_diagram.png" height="500" alt="Code Example Diagram"/>
 
-1. Install TPDS (https://www.microchip.com/tpds).
-
-2. In order to provision the Trust Anchor element, an extension is required to enable Kit Protocol over UART. This allows TPDS to communicate with the hardware and the secure elements. Follow the instructions found in the "Secure Element Provision Prototyping" section under "Trust Platform Design Suite Installation" section of the [CAL release notes](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=KIT_PROTOCOL&version=latest&redirect=true) to request and install the TA10x-TCSM TPDS configurator extension. 
+1. **Trust Platform Design Suite (TPDS) Installation**
+    - Go to [TPDS](https://www.microchip.com/en-us/products/security/trust-platform/tpds).
+    - Select Download TPDSv2 for your operating system.
+    - Follow the steps on the installer and [installation guide](https://developerhelp.microchip.com/xwiki/bin/view/applications/security/trust-platform-v2/).
+    - After installation complete the following steps:
+    - Ensure TPDS is version 2.3.9 or higher
+    - For dsPIC33 devices:
+        - Open the Trust Platform Design Suite application.
+            - Select the "Utilities" tab.
+            - Select "Package Manager".
+            - Find the extension named **"tpds-extension-dspic33-support"** and select the check box to install the content.
+            - Select the "Install Selected Packages" button at the top.
+            - Restart the application.
+            - The version 1.0.1 or higher is now installed.
+2. **Some Secure Elements require a request from the Secure Document Exchange (SDE) on [myMicrochip](https://www.microchip.com/myMicrochip)**
+    - [Accessing Secure Documents](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/SupportingCollateral/Secure-Documents-MyMCHP-00004722.pdf)
+    - An access request will need to be made for secure documents
+        - Some documents/content require an NDA and this will be completed in tandem with the access request.
+    - After receiving an email confirming access to the requested SDE document, install any MCC content and/or TPDS extension that may be required for provisioning Secure Element. Most secure documents come with a readme and/or installation guide.
+    - Here is an example of content required for the dsPIC33 with the TA100:
+        - MCC Melody Trust Anchor Library is required for TA100 Secure Element Support.
+            - How to request access:
+                - Under the Request Access section of myMicrochip, search and request access for the product "TA-Lib-MCC".
+        - Additional steps to install can be found [here](https://onlinedocs.microchip.com/oxy/GUID-FB7A0655-D622-421B-83A7-138A38158B6D-en-US-8/GUID-7D69101E-EA71-47BE-B794-7F2CA6363B2C.html).
+    - TPDS requires a TA10x extension to be installed:
+        - How to request access:
+            - Under the Request Access section of myMicrochip, search and request access for product **"TA10x-TCSM TPDS configurator"** in the **All Products** dropdown.
+            - Then download the extension under the Document Search section of myMicrochip. Filter by **"TA10x TPDS extension"** choosing version v2.7.1.
+            - To install the extension simply open the Trust Platform Design Suite application
+                - Select the "Utilities" tab.
+                - Select "Package Manager".
+                - Click on "Install TPDS Extension" button.
+                - Select the file(s) given on myMicrochip.
 
 > **NOTE:** TPDS needs to be restarted before the changes are applied.
 
