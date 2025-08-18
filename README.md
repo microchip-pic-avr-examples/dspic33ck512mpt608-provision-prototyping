@@ -95,7 +95,7 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
     - TPDS requires a TA10x extension to be installed:
         - How to request access:
             - Under the Request Access section of myMicrochip, search and request access for product **"TA10x-TCSM TPDS configurator"** in the **All Products** dropdown. 
-            - A dialogue will ask to add an active NDA select the "No, Proceed" option to submit the request. **It will take some time for the approval process to complete**
+            - A dialogue will ask to add an active NDA. Select the "No, Proceed" option to submit the request. **It will take some time for the approval process to complete**
             - Then download the extension under the Document Search section of myMicrochip. Filter by **"TA10x TPDS extension"** choosing version v2.7.1.
             - To install the extension simply open the Trust Platform Design Suite application
                 - Select the "Utilities" tab.
