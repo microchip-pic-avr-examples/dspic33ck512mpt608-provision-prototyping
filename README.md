@@ -140,7 +140,7 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 
 3. Select the TAx Configurator under the TrustCUSTOM Section.
 4. Update the Device Configuration Options:
-    - Devuce: TA100 
+    - Device: TA100 
     - Package Option: 8 Pin SOIC
     - I/O Type: SPI Interface
     - Configuration Lock: Unchecked
