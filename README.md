@@ -221,5 +221,5 @@ The Trust Platform Design Suite is an onboarding tool used for our security-rela
 # Version Compatability
 |dsPIC33CK512MPT608 Provision Prototyping|TPDS|TA Configurator|MCC CAL Library|TA-Lib-MCC|
 |---|---|---|---|---|
-|v1.0.1|2.3.9|TAx Legacy Configurator|v5.8.0|v1.2.0|
-|v1.0.2|2.3.9|TAx Configurator|v5.11.0|v.2.1.0|
+|v1.0.1|v2.3.9|TAx Legacy Configurator|v5.8.0|v1.2.0|
+|v1.0.2|v2.3.9|TAx Configurator|v5.11.0|v2.1.0|
