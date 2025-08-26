@@ -16,7 +16,7 @@
 */
 
 /*
-© [2024] Microchip Technology Inc. and its subsidiaries.
+© [2025] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -79,7 +79,7 @@ struct SPI1_HOST_CONFIG
 
 static const struct SPI1_HOST_CONFIG config[] = {  
                                         { 
-                                            /*Configuration setting for CrytoAuthenticationLibrary.
+                                            /*Configuration setting for CryptoAuthenticationLibrary.
                                             SPI Mode : Mode 0, Sampled at : Middle, Clock Frequency : 1000 kHz*/
                                             0x31,//SPI1BRGL
                                             0x121,//SPI1CON1L
